@@ -1,16 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Meta tags for search engines to crawl -->
 <meta name="robots" content="index,follow">
 <meta name="keywords" content="Haicheng LiaoLiao; University of Macau; UM; Autonomous Driving; Autonomous Vehicle; Transportation; Intelligent Transportation Systems; Transportation Safety; LLM; Multimodal Grounding">
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <link rel="author" href="https://petrichor625.github.io/">
 
-	<title>Haicheng Liao (廖海成) - Homepage</title>
+  <title>Haicheng Liao (廖海成) - Homepage</title>
    <link rel="icon" type="image/jpg" href="images/um.jpg">
-	<style>
+  <style>
 
 @media screen and (max-device-width: 480px){
   body{
@@ -24,7 +23,7 @@ p { font-size : 16px; }
 h1 { font-size : 34px; margin : 0; padding : 0; }
 h2 { font-size : 20px; margin : 0; padding : 0; }
 h3 { font-size : 18px; margin : 8; padding : 0; }
-h6 { font-size : 20px; margin : 8; padding : 0; border-bottom: 1px solid #aaaaaa; 	margin-bottom: 0.5em; padding-bottom: 0.5em;}
+h6 { font-size : 20px; margin : 8; padding : 0; border-bottom: 1px solid #aaaaaa;   margin-bottom: 0.5em; padding-bottom: 0.5em;}
 body { padding : 0; font-family : Arial; font-size : 16px; background-color : rgb(224, 224, 224); }
 .title { width : 650px; margin : 20px auto; }
 .container { width : 850px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
@@ -60,14 +59,91 @@ a, a:visited { color : #4987fa; }
     border-radius: 10px;  background-color : #fff;
 }
 
+/* --- STYLES FOR PUBLICATION FILTER (MERGED) --- */
 
+.publication-item tr {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.publication-item td {
+    padding: 20px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
 
+.filter-buttons {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: left; 
+}
 
+.filter-btn {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 18px;
+    margin: 0 6px 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
 
+.filter-btn:hover {
+    background-color: #f4f4f4;
+    border-color: #ccc;
+}
 
-	</style>
-	<script async="" src="./homepage_files/analytics.js"></script>
+.filter-btn.active-filter {
+    background-color: #4987fa;
+    color: white;
+    border-color: #4987fa;
+    box-shadow: 0 3px 6px rgba(73, 135, 250, 0.25);
+}
+
+/* Updated hidden class logic */
+.hidden {
+    display: none;
+}
+
+.other-publications-section ol {
+    padding-left: 25px;
+    list-style-type: decimal;
+}
+.other-publications-section li {
+    margin-bottom: 15px;
+}
+.other-publications-section li p {
+    margin: 0;
+}
+
+/* --- END MERGED STYLES --- */
+
+/* --- Style for Footer --- */
+#footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.last-update {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    padding-bottom: 20px;
+}
+
+  </style>
+  <script async="" src="./homepage_files/analytics.js"></script>
 </head>
 
 <body>
@@ -75,93 +151,73 @@ a, a:visited { color : #4987fa; }
     <div class="menu_container">
         <h2>
             <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <!-- <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp; -->
             <a href="./publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
-            <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp; -->
             <a href="./Misc.html">Misc.</a>
-            <!-- <a href="./awards.html">Awards</a> -->
         </h2>
     </div>
 
-	<div class="container">
-		<div id="sidebar">
+  <div class="container">
+    <div id="sidebar">
             <img src="images/HaichengLiao_1.jpg" vspace="30 px" width="250 px" id="me" itemprop="photo">
         </div>
-		<div id="bio">
+    <div id="bio">
 
-            <!-- <br> -->
+      <h1>
+        <span itemprop="name">Haicheng Liao (廖海成)</span>
+      </h1>
 
-			<h1>
-				<span itemprop="name">Haicheng Liao (廖海成)</span>
-			</h1>
-
-          <!-- <br> -->
-
-			<p style="line-height:18px;">
+      <p style="line-height:18px;">
             <h2>PhD Student</h2>
               
-                <br>
-                <a href='https://skliotsc.um.edu.mo/'> State Key Laboratory of Internet of Things for Smart City</a>
-                <br>
-                <br>
-                <a href='https://www.um.edu.mo/'> University of Macau</a>
-                <br>
-                <br>
-                <a href='mailto: yc27979@um.edu.mo'> Email:</a> yc27979 [AT] um.edu.mo
-                <br>
-			</p>
+                  <br>
+                  <a href='https://skliotsc.um.edu.mo/'> State Key Laboratory of Internet of Things for Smart City</a>
+                  <br>
+                  <br>
+                  <a href='https://www.um.edu.mo/'> University of Macau</a>
+                  <br>
+                  <br>
+                  <a href='mailto: yc27979@um.edu.mo'> Email:</a> yc27979 [AT] um.edu.mo
+                  <br>
+      </p>
 
-            
-
-    
-
-
-              <p class="external">
+            <p class="external">
                 <a href="https://scholar.google.com/citations?user=8CpgTrkAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a>
                 <a href="https://www.linkedin.com/in/haichengliao/">Linkedin</a>
                 <a href="https://github.com/Petrichor625">Github</a>
                 <a href="https://orcid.org/my-orcid?orcid=0000-0002-0207-5087">ORCID</a>
             </p>
 
-
-	<!-- </div>
-
-
-
-
-	<div class="container"> -->
     <br>
-		<h6>Short Bio</h6>
-		<p> 
-      👋I am currently a fourth-year Ph.D. candidate in Computer Science at 
-      <a href="https://www.um.edu.mo">University of Macau</a> (UM), supervised by 
-      <a href='https://www.fst.um.edu.mo/personal/zhenningli/'>Prof. Zhenning Li</a> and <a href='https://www.fst.um.edu.mo/people/czxu/'>Prof. Chengzhong Xu</a> (IEEE Fellow, Dean of the Faculty of Science and Technology). 
-      I am also affiliated with the <a href="https://skliotsc.um.edu.mo/">State Key Laboratory of Internet of Things for Smart City (SKL-IOTSC)</a> and <a href='https://www.fst.um.edu.mo/personal/zhenningli/group/'>HUMAN LAB</a>.
-      Before joining UM, I earned the B.E. (2022) from the University of Electronic Science and Technology of China (<a href='https://www.uestc.edu.cn/'>UESTC</a>).
+    <h6>Short Bio</h6>
+    <p> 
+       👋I am currently a fourth-year Ph.D. candidate in Computer Science at 
+       <a href="https://www.um.edu.mo">University of Macau</a> (UM), supervised by 
+       <a href='https://www.fst.um.edu.mo/personal/zhenningli/'>Prof. Zhenning Li</a> and <a href='https://www.fst.um.edu.mo/people/czxu/'>Prof. Chengzhong Xu</a> (IEEE Fellow, Dean of the Faculty of Science and Technology). 
+       I am also affiliated with the <a href="https://skliotsc.um.edu.mo/">State Key Laboratory of Internet of Things for Smart City (SKL-IOTSC)</a> and <a href='https://www.fst.um.edu.mo/personal/zhenningli/group/'>HUMAN LAB</a>.
+       Before joining UM, I earned the B.E. (2022) from the University of Electronic Science and Technology of China (<a href='https://www.uestc.edu.cn/'>UESTC</a>).
             <br>
             <br>
             💡Passionate about Intelligent Transportation Systems,
                 I bring AI&ML techniques to Human-Like Autonomous Driving, broadly including four key research themes: 
                 <strong>(1) Trajectory Prediction & Planning</strong>, 
                 <strong>(2) Multimodal Grounding</strong>, 
-                <strong>(3) Accident Anticipation</strong>,       
+                <strong>(3) Accident Anticipation</strong>,     
                 <strong>(4) End-to-end Autonomous Driving</strong>. 
-              I have published 20+ papers as the first/co-first author in prestigious journals such as  
-              <a href='https://pubsonline.informs.org/journal/trsc'>Transportation Science</a>, IEEE (<a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34'>T-PAMI</a>, 
-              <a href='https://www.ieee-ras.org/publications/t-ro'>T-RO</a>,
-               <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979'>T-ITS</a>,  
-               <a href='https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence'>T-AI</a>,
-              <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857'>T-IV</a>), 
-              <a href='https://www.sciencedirect.com/journal/communications-in-transportation-research'>COMMTR</a>, 
-              <a href='https://www.sciencedirect.com/journal/information-fusion'>Information Fusion</a>, 
-              and <a href='https://www.sciencedirect.com/journal/accident-analysis-and-prevention'>AAP</a>, 
-              and at leading AI conferences like <a href='https://iccv.thecvf.com/'>ICCV</a>, 
-              <a href='https://aaai.org/conference/aaai/aaai-25/'>AAAI (Oral)</a>, 
-              <a href='https://2024.acmmm.org/'>ACM MM (Oral)</a>, 
-              <a href='https://ijcai24.org/'>IJCAI</a>, 
-              <a href='https://www.ecai2024.eu/'>ECAI</a>, 
-              and <a href='https://2024.ieee-icra.org/'>ICRA</a>.<be>   
+             I have published 20+ papers as the first/co-first author in prestigious journals such as  
+             <a href='https://pubsonline.informs.org/journal/trsc'>Transportation Science</a>, IEEE (<a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34'>T-PAMI</a>, 
+             <a href='https://www.ieee-ras.org/publications/t-ro'>T-RO</a>,
+              <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979'>T-ITS</a>,  
+              <a href='https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence'>T-AI</a>,
+             <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857'>T-IV</a>), 
+             <a href='https://www.sciencedirect.com/journal/communications-in-transportation-research'>COMMTR</a>, 
+             <a href='https://www.sciencedirect.com/journal/information-fusion'>Information Fusion</a>, 
+             and <a href='https://www.sciencedirect.com/journal/accident-analysis-and-prevention'>AAP</a>, 
+             and at leading AI conferences like <a href='https://iccv.thecvf.com/'>ICCV</a>, 
+             <a href='https://aaai.org/conference/aaai/aaai-25/'>AAAI (Oral)</a>, 
+             <a href='https://2024.acmmm.org/'>ACM MM (Oral)</a>, 
+             <a href='https://ijcai24.org/'>IJCAI</a>, 
+             <a href='https://www.ecai2024.eu/'>ECAI</a>, 
+             and <a href='https://2024.ieee-icra.org/'>ICRA</a>.<be>   
                 <br>
                 <br>
                 <span style="color: red;">⭐We are looking for self-motivated RAs to join <a href='https://www.fst.um.edu.mo/personal/zhenningli/group/'>HUMAN LAB</a>! If interested, please don't hesitate to email me!</span>
@@ -171,502 +227,530 @@ a, a:visited { color : #4987fa; }
                 Shanghai Jiao Tong University (SJTU), University of Science and Technology of China (USTC), and Tongji University (TJU).
 
                 <br><br>👉If you are interested in collaborating or sharing thoughts, please feel free to reach out via <a href="yc27979@um.edu.mo">Email</a> or WeChat.</a>🚗  
+    </p>
 
-		</p>
+    <!-- <br>  -->
+    <h6>Selected Publications</h6>
+    (*): I am the co-first author; (†): Corresponding author
+    <br>
 
-
-
-        <h6>Main Publications</h6>
-        (*): I am the co-first author; (†): Corresponding author
-      <br>
-      <br>
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding:20px; vertical-align:middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/HiT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a>
-              <br>
-
-              <strong class="wrap">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu
-              <br>
-              Transportation Science <strong>(TS)</strong>, 2025<br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <br>
-      <br>
+    <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterPublications('highlight')">Highlight</button> 
+        <button class="filter-btn" onclick="filterPublications('ai')">AI</button>
+        <button class="filter-btn" onclick="filterPublications('transportation')">Transportation</button>
+        <button class="filter-btn" onclick="filterPublications('others')">Others</button>
+        <button class="filter-btn" onclick="filterPublications('all')">ALL</button>
+    </div>
 
 
-
-      
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding:20px; vertical-align:middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/TRO_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://ieeexplore.ieee.org/document/11129935' target='_blank'>SA&#8209;TP<sup>2</sup>: A Safety-Aware Trajectory Prediction and Planning Model for Autonomous Driving</a>
-              <br>
-              <strong>Haicheng Liao</strong>, Zhenning Li†, Kaiqun Zhu, Keqiang Li, Chengzhong Xu
-          
-
-              <br>
-              IEEE Transactions on Robotics<strong> (IEEE TRO)</strong>, 2025<br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <br>
-      <br>
-
-
-            
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding:20px; vertical-align:middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/BAT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a>
-              <br>
-              <strong>Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†
-          
-
-              <br>
-              AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024<br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-
-      <br>
-      <br>
-      
-        
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding:20px; vertical-align:middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='./img/TPAMI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://ieeexplore.ieee.org/document/10839301' target='_blank'>WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy</a>
-              <br>
-              Chengyue Wang*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Chengzhong Xu
-          
-
-              <br>
-              IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2025<br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <br>
-      <br>
-
-
-      
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='./img/TITS_2025_1.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-            <a href='https://arxiv.org/abs/2502.20084' target='_blank'>Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights</a> 
-              <br>
-              <strong>Haicheng Liao</strong>, Chengyue Wang, Kaiqun Zhu, Yilong Ren, Bolin Gao, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
-              <br>
-              IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-
-      <br>
-      <br>
-      
-
-
-            <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='./img/MM_2024_1.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://arxiv.org/abs/2407.16277' target='_blank'>
-                When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
-              </a>
-              <br>
-              <strong>Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
-              <br>
-              ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span><br>
-            </div>
-          </div>
-        </td>
-      </tr>
-    
-      <br>
-      <br>    
-
-
-
-
-
-
-            <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/COT_1.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-            <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Chain-of-Thought Guided Multimodal Large Language Models for Scene-Aware Accident Anticipation in Autonomous Driving</a> 
-              <br>
-              <strong>Haicheng Liao</strong>, Bin Rao, Haoyu Sun, Chengyue Wang, Qing Chang, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
-              <br>
-              IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-
-      <br>
-      <br>
-
-
-
-
-                      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='images/CE.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+    <div id="highlight-list" class="publication-list">
+        <div class="publication-item transportation"> 
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/HiT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                    <a href='https://www.nature.com/articles/s44172-025-00474-7' target='_blank'>World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving</a><br>
-                  Yanchen Guan, <strong>Haicheng Liao</strong>, Chengyue Wang, Xingchen Liu, Jiaxun Zhang, Zhenning Li†<br>
-                  Communications Engineering <strong>(COMMSENG)</strong>, 2025<br> <span style="color: orangered;">[Nature Portfolio]</span>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a>
+                  <br>
+                  <strong class="wrap">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu
+                  <br>
+                  Transportation Science <strong>(TS)</strong>, 2025<br> 
+                  <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span>
                 </div>
               </div>
             </td>
-          </tr>  
-          
-          <br>
-          <br>    
-  
-
-            <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/3D_real_time.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-            <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Real-time accident anticipation for autonomous driving through monocular depth-enhanced 3D modeling</a> 
-              <br>
-              <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Jaeyoung Lee, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†
-              <br>
-              Accident Analysis & Prevention <strong>(AAP)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>
+          </tr>
+          <br><br>
+        </div>
 
 
-      <br>
-      <br>
-      
-
-      
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/CRASH.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-              <a href='https://petrichor625.github.io/data/Crash.pdf' target='_blank'>
-                CRASH: Crash Recognition and Anticipation System Harnessing with Context-Aware and Temporal Focus Attentions
-              </a>
-              <br>
-              <strong>Haicheng Liao</strong>, Haoyu Sun, HuanmingShen, Chengyue Wang, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
-              <br>
-              ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>
-    
-      <br>
-      <br>    
-      
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Wave.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a> <br>
-                <strong>Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu<br>
-                International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024<br> <span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span><br> 
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Map.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://arxiv.org/pdf/2405.01266?' target='_blank'>MFTraj: Map-Free, Behavior-Driven Trajectory Prediction for Autonomous Driving</a> <br>
-                <strong>Haicheng Liao</strong>, Zhenning Li†, Chengyue Wang, Huanming Shen, Bonan Wang,  Dongping Liao, Guofa Li, Chengzhong Xu†<br>
-                International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-  <td colspan="2" style="padding: 20px; vertical-align: middle;">
-    <div style="display: flex; align-items: center;">
-      <!-- 图片部分 -->
-      <div style="flex: 0 0 20%; padding-right: 20px;">
-        <img src='images/Safe_1.png' width="100%" 
-             style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-      </div>
-      <!-- 文字部分 -->
-      <div style="flex: 1;">
-          <a href='https://arxiv.org/pdf/2404.17520' target='_blank'>A Cognitive-Driven Trajectory Prediction Model for Autonomous Driving in Mixed Autonomy Environments</a> <br>
-          <strong>Haicheng Liao</strong>,  Zhenning Li, Chengyue Wang, Bonan Wang, Hanlin Kong, Yanchen Guan, Zhiyong Cui, Chengzhong Xu†<br>
-          International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
-      </div>
-    </div>
-  </td>
-</tr>  
-<br>
-<br>
-
-<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-  <td colspan="2" style="padding: 20px; vertical-align: middle;">
-    <div style="display: flex; align-items: center;">
-      <!-- 图片部分 -->
-      <div style="flex: 0 0 20%; padding-right: 20px;">
-        <img src='images/Diffusion.png' width="100%" 
-             style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-      </div>
-      <!-- 文字部分 -->
-      <div style="flex: 1;">
-          <a href='https://petrichor625.github.io/data/Diffusion.pdf' target='_blank'>Characterized Diffusion and Spatial-Temporal Interaction Network for Trajectory Prediction in Autonomous Driving</a> <br>
-          <strong>Haicheng Liao</strong>,  Xuelin Li, Yongkang Li, Hanlin Kong, Chengyue Wang, Bonan Wang, Yanchen Guan, KaHou Tam, Zhenning Li†<br>
-          International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
-      </div>
-    </div>
-  </td>
-</tr>  
-<br>
-<br>
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/CAVG.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://petrichor625.github.io/data/CAVG.pdf' target='_blank'>GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models</a> <br>
-                <strong>Haicheng Liao</strong>, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu†
-                Communications in Transportation Research <strong>(COMMTR)</strong>, 2024<br> <span style="color: orangered;">Most Cited and Downloads Paper in COMMTR, 2024</span><br>
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Vision.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://petrichor625.github.io/data/Vision.pdf' target='_blank'>Human Observation-Inspired Trajectory Prediction for Autonomous Driving in Mixed-Autonomy Traffic Environments</a> <br>
-                <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
-                IEEE International Conference on Robotics & Automation <strong>(ICRA)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Less_is_more.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://arxiv.org/pdf/2407.07020' target='_blank'>Less is More: Efficient Brain-Inspired Learning for Autonomous Driving Trajectory Prediction</a> <br>
-                <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
-                European Conference on Artificial Intelligence <strong>(ECAI)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Cognavive.jpg' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://petrichor625.github.io/data/Cognative.pdf' target='_blank'>A Cognitive-Based Trajectory Prediction Approach for Autonomous Driving</a> <br>
-                <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Chengyue Wang, Zhiyong Cui, Shengbo Eben Li, Chengzhong Xu†<br>
-                IEEE Transactions on Intelligent Vehicles <strong>(TIV)</strong>, 2024 <br>
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/COT_1.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-            <a href='https://petrichor625.github.io/data/CoT_Drive.pdf' target='_blank'>CoT-Drive: Efficient Motion Forecasting for Autonomous Driving with LLMs and Chain-of-Thought Prompting</a> 
-              <br>
-              <strong>Haicheng Liao</strong>,  Hanlin Kong, Bonan Wang, Chengyue Wang, Ye Wang, Zhengbing He, Chengzhong Xu, Zhenning Li†
-              <br>
-              IEEE Transactions on Artificial Intelligence <strong>(TAI)</strong>, 2025 <br>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-    
-      <br>
-      <br>    
-      
-
-
-        <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='images/AMD.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/TRO_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/11129935' target='_blank'>SA&#8209;TP<sup>2</sup>: A Safety-Aware Trajectory Prediction and Planning Model for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li†, Kaiqun Zhu, Keqiang Li, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Robotics<strong> (IEEE TRO)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+       <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/TPAMI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/10839301' target='_blank'>WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy</a>
+                  <br>
+                  Chengyue Wang*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/MM_2024_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://arxiv.org/abs/2407.16277' target='_blank'>
+                    When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
+                  </a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span><br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/BAT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†
+                  <br>
+                  AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+                  <!-- <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Wave.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a> <br>
+                    <strong>Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024<br> <span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span><br> 
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div> -->
+    </div>
+
+
+  
+    <div id="all-list" class="publication-list hidden">
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/HiT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a>
+                  <br>
+                  <strong class="wrap">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu
+                  <br>
+                  Transportation Science <strong>(TS)</strong>, 2025<br> 
+                  <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/TRO_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/11129935' target='_blank'>SA&#8209;TP<sup>2</sup>: A Safety-Aware Trajectory Prediction and Planning Model for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li†, Kaiqun Zhu, Keqiang Li, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Robotics<strong> (IEEE TRO)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+       <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/TPAMI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/10839301' target='_blank'>WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy</a>
+                  <br>
+                  Chengyue Wang*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/MM_2024_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://arxiv.org/abs/2407.16277' target='_blank'>
+                    When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
+                  </a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span><br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/BAT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†
+                  <br>
+                  AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CAVG.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/CAVG.pdf' target='_blank'>GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models</a> <br>
+                    <strong>Haicheng Liao</strong>, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu†
+                    <br>
+                    Communications in Transportation Research <strong>(COMMTR)</strong>, 2024<br> <span style="color: orangered;">Most Cited and Downloads Paper in COMMTR, 2024</span><br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Wave.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a> <br>
+                    <strong>Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024<br> <span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span><br> 
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Map.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2405.01266?' target='_blank'>MFTraj: Map-Free, Behavior-Driven Trajectory Prediction for Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>, Zhenning Li†, Chengyue Wang, Huanming Shen, Bonan Wang,  Dongping Liao, Guofa Li, Chengzhong Xu†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Safe_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2404.17520' target='_blank'>A Cognitive-Driven Trajectory Prediction Model for Autonomous Driving in Mixed Autonomy Environments</a> <br>
+                    <strong>Haicheng Liao</strong>,  Zhenning Li, Chengyue Wang, Bonan Wang, Hanlin Kong, Yanchen Guan, Zhiyong Cui, Chengzhong Xu†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Diffusion.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Diffusion.pdf' target='_blank'>Characterized Diffusion and Spatial-Temporal Interaction Network for Trajectory Prediction in Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>,  Xuelin Li, Yongkang Li, Hanlin Kong, Chengyue Wang, Bonan Wang, Yanchen Guan, KaHou Tam, Zhenning Li†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CRASH.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://petrichor625.github.io/data/Crash.pdf' target='_blank'>
+                    CRASH: Crash Recognition and Anticipation System Harnessing with Context-Aware and Temporal Focus Attentions
+                  </a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Haoyu Sun, HuanmingShen, Chengyue Wang, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Vision.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Vision.pdf' target='_blank'>Human Observation-Inspired Trajectory Prediction for Autonomous Driving in Mixed-Autonomy Traffic Environments</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
+                    IEEE International Conference on Robotics & Automation <strong>(ICRA)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/TITS_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/abs/2502.20084' target='_blank'>Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Chengyue Wang, Kaiqun Zhu, Yilong Ren, Bolin Gao, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/COT_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Chain-of-Thought Guided Multimodal Large Language Models for Scene-Aware Accident Anticipation in Autonomous Driving</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Bin Rao, Haoyu Sun, Chengyue Wang, Qing Chang, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/3D_real_time.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Real-time accident anticipation for autonomous driving through monocular depth-enhanced 3D modeling</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Jaeyoung Lee, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†
+                  <br>
+                  Accident Analysis & Prevention <strong>(AAP)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Less_is_more.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2407.07020' target='_blank'>Less is More: Efficient Brain-Inspired Learning for Autonomous Driving Trajectory Prediction</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
+                    European Conference on Artificial Intelligence <strong>(ECAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Cognavive.jpg' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Cognative.pdf' target='_blank'>A Cognitive-Based Trajectory Prediction Approach for Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Chengyue Wang, Zhiyong Cui, Shengbo Eben Li, Chengzhong Xu†<br>
+                    IEEE Transactions on Intelligent Vehicles <strong>(TIV)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/COT_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://petrichor625.github.io/data/CoT_Drive.pdf' target='_blank'>CoT-Drive: Efficient Motion Forecasting for Autonomous Driving with LLMs and Chain-of-Thought Prompting</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>,  Hanlin Kong, Bonan Wang, Chengyue Wang, Ye Wang, Zhengbing He, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Artificial Intelligence <strong>(TAI)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/SafeCast.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://petrichor625.github.io/data/SafeCast.pdf' target='_blank'>SafeCast: Risk-responsive motion forecasting for autonomous vehicles</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>,  Hanlin Kong,  Zhenning Li†, Chengzhong Xu
+                  <br>AI Open, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div> 
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/AMD.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
                   <a href='https://arxiv.org/pdf/2507.01801' target='_blank'>
                     AMD: Adaptive Momentum and Decoupled Contrastive Learning Framework for Robust Long-Tail Trajectory Prediction
                   </a>
@@ -674,32 +758,21 @@ a, a:visited { color : #4987fa; }
                   Bin Rao*, <strong>Haicheng Liao*</strong>, Yanchen Guan, Chengyue Wang, Yanchen Guan, Bonan Wang, Jiaxun Zhang, Zhenning Li†
                   <br>
                   International Conference on Computer Vision <strong>(ICCV)</strong>, 2025 <br>
-                 
                 </div>
               </div>
             </td>
           </tr>
+          <br><br>
+        </div>
 
-          <br>
-          <br> 
-
-
-
-
-        
-
-
-
+        <div class="publication-item ai">
           <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/AAAI_2025_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/AAAI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
+                <div style="flex: 1; min-width: 300px;">
                   <a href='https://arxiv.org/abs/2412.11682' target='_blank'>
                     NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving
                   </a>
@@ -708,141 +781,931 @@ a, a:visited { color : #4987fa; }
                   Chengzhong Xu, Zhenning Li†
                   <br>
                   AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span><br>
-                 
                 </div>
               </div>
             </td>
           </tr>
-
-          <br>
-          <br> 
-
-
-
-
-
-
-
-      <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-        <td colspan="2" style="padding: 20px; vertical-align: middle;">
-          <div style="display: flex; align-items: center;">
-            <!-- 图片部分 -->
-            <div style="flex: 0 0 20%; padding-right: 20px;">
-              <img src='images/Casual.png' width="100%" 
-                   style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-            </div>
-            <!-- 文字部分 -->
-            <div style="flex: 1;">
-                <a href='https://arxiv.org/pdf/2505.06856' target='_blank'>Beyond Patterns: Harnessing Causal Logic for Autonomous Driving Trajectory Prediction</a> <br>
-                Bonan Wang* <strong>Haicheng Liao*</strong>,  Chengyue Wang, Yanchen Guan, Bin Rao, Yuyang Gu, Jiaxun Zhang, Songning Lai, Chengzhong Xu, Zhenning Li†<br>
-                International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2025<br> <span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span><br> 
-            </div>
-          </div>
-        </td>
-      </tr>  
-<br>
-<br>
-
-
-
-
+          <br><br>
+        </div>
+        
+        <div class="publication-item ai">
           <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/fusion_2025_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Casual.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2505.06856' target='_blank'>Beyond Patterns: Harnessing Causal Logic for Autonomous Driving Trajectory Prediction</a> <br>
+                    Bonan Wang* <strong>Haicheng Liao*</strong>,  Chengyue Wang, Yanchen Guan, Bin Rao, Yuyang Gu, Jiaxun Zhang, Songning Lai, Chengzhong Xu, Zhenning Li†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/fusion_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
                     <a href='https://arxiv.org/abs/2412.20784' target='_blank'>DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles</a><br>
                     Chengyue Wang*, <strong>Haicheng Liao*</strong>, Kaiqun Zhu, Guohui Zhang, Zhenning Li†<br> 
                     <strong>Information Fusion</strong>, 2025<br> 
                 </div>
               </div>
             </td>
-          </tr>  
-            
-          <br>
-          <br>
+          </tr>
+          <br><br>
+        </div>
 
-
-   
-      
-                <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-              
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='images/Bayesian.jpg' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Bayesian.jpg' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-              
-                <div style="flex: 1;">
+                <div style="flex: 1; min-width: 300px;">
                     <a href='https://arxiv.org/pdf/2403.02622f' target='_blank'>Mitigating the impact of outliers in traffic crash analysis: A robust Bayesian regression approach with application to tunnel crash data</a><br>
-                  Zhenning Li*, <strong>Haicheng Liao*</strong>, Ruru Tang, Guofa Li, Yunjian Li, Chengzhong Xu†<br>
-                  Accident Analysis & Prevention <strong> (AAP)</strong>, 2023<br>
+                    Zhenning Li*, <strong>Haicheng Liao*</strong>, Ruru Tang, Guofa Li, Yunjian Li, Chengzhong Xu†<br>
+                    Accident Analysis & Prevention <strong> (AAP)</strong>, 2023<br>
                 </div>
               </div>
             </td>
-          </tr>  
-          
-          <br>
-          <br>    
-        
+          </tr>
+          <br><br>
+        </div>
 
-
-                <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-              
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='images/World.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+           <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CE.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 </div>
-              
-                <div style="flex: 1;">
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://www.nature.com/articles/s44172-025-00474-7' target='_blank'>World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving</a><br>
+                    Yanchen Guan, <strong>Haicheng Liao</strong>, Chengyue Wang, Xingchen Liu, Jiaxun Zhang, Zhenning Li†<br>
+                    Communications Engineering <strong>(COMMSENG)</strong>, 2025<br> 
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+        
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/World.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
                     <a href='https://arxiv.org/pdf/2403.02622f' target='_blank'>World Models for Autonomous Driving: An Initial Survey</a><br>
-                  Yanchen Guan*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Jia Hu, Runze Yuan, Yunjian Li, Guohui Zhang, Chengzhong Xu†<br>
+                    Yanchen Guan*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Jia Hu, Runze Yuan, Yunjian Li, Guohui Zhang, Chengzhong Xu†<br>
                     IEEE Transactions on Intelligent Vehicles <strong>(IEEE TIV)</strong>, 2024<br>
                 </div>
               </div>
             </td>
-          </tr>  
-          
-          <br>
-          <br>    
+          </tr>
+          <br><br>
+        </div>
+    </div>
+
+
+    <div id="ai-list" class="publication-list hidden">
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/TRO_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/11129935' target='_blank'>SA&#8209;TP<sup>2</sup>: A Safety-Aware Trajectory Prediction and Planning Model for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li†, Kaiqun Zhu, Keqiang Li, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Robotics<strong> (IEEE TRO)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+       <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/TPAMI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ieeexplore.ieee.org/document/10839301' target='_blank'>WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy</a>
+                  <br>
+                  Chengyue Wang*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Chengzhong Xu
+                  <br>
+                  IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+       
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/MM_2024_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://arxiv.org/abs/2407.16277' target='_blank'>
+                    When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
+                  </a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span><br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/BAT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†
+                  <br>
+                  AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+
+
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Wave.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a> <br>
+                    <strong>Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024<br> <span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span><br> 
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Map.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2405.01266?' target='_blank'>MFTraj: Map-Free, Behavior-Driven Trajectory Prediction for Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>, Zhenning Li†, Chengyue Wang, Huanming Shen, Bonan Wang,  Dongping Liao, Guofa Li, Chengzhong Xu†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Safe_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2404.17520' target='_blank'>A Cognitive-Driven Trajectory Prediction Model for Autonomous Driving in Mixed Autonomy Environments</a> <br>
+                    <strong>Haicheng Liao</strong>,  Zhenning Li, Chengyue Wang, Bonan Wang, Hanlin Kong, Yanchen Guan, Zhiyong Cui, Chengzhong Xu†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Diffusion.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Diffusion.pdf' target='_blank'>Characterized Diffusion and Spatial-Temporal Interaction Network for Trajectory Prediction in Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>,  Xuelin Li, Yongkang Li, Hanlin Kong, Chengyue Wang, Bonan Wang, Yanchen Guan, KaHou Tam, Zhenning Li†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CRASH.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://petrichor625.github.io/data/Crash.pdf' target='_blank'>
+                    CRASH: Crash Recognition and Anticipation System Harnessing with Context-Aware and Temporal Focus Attentions
+                  </a>
+                  <br>
+                  <strong>Haicheng Liao</strong>, Haoyu Sun, HuanmingShen, Chengyue Wang, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/AMD.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://arxiv.org/pdf/2507.01801' target='_blank'>
+                    AMD: Adaptive Momentum and Decoupled Contrastive Learning Framework for Robust Long-Tail Trajectory Prediction
+                  </a>
+                  <br>
+                  Bin Rao*, <strong>Haicheng Liao*</strong>, Yanchen Guan, Chengyue Wang, Yanchen Guan, Bonan Wang, Jiaxun Zhang, Zhenning Li†
+                  <br>
+                  International Conference on Computer Vision <strong>(ICCV)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/AAAI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://arxiv.org/abs/2412.11682' target='_blank'>
+                    NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving
+                  </a>
+                  <br>
+                  Chengyue Wang*, <strong>Haicheng Liao*</strong>, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, 
+                  Chengzhong Xu, Zhenning Li†
+                  <br>
+                  AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span><br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+        
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Casual.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2505.06856' target='_blank'>Beyond Patterns: Harnessing Causal Logic for Autonomous Driving Trajectory Prediction</a> <br>
+                    Bonan Wang* <strong>Haicheng Liao*</strong>,  Chengyue Wang, Yanchen Guan, Bin Rao, Yuyang Gu, Jiaxun Zhang, Songning Lai, Chengzhong Xu, Zhenning Li†<br>
+                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2025<br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Vision.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Vision.pdf' target='_blank'>Human Observation-Inspired Trajectory Prediction for Autonomous Driving in Mixed-Autonomy Traffic Environments</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
+                    IEEE International Conference on Robotics & Automation <strong>(ICRA)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Less_is_more.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2407.07020' target='_blank'>Less is More: Efficient Brain-Inspired Learning for Autonomous Driving Trajectory Prediction</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li†, Chengyue Wang, Guofa Li, Chunlin Tian, Zilin Bian, Kaiqun Zhu, Zhiyong Cui, Jia Hu, Chengzhong Xu<br>
+                    European Conference on Artificial Intelligence <strong>(ECAI)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/COT_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://petrichor625.github.io/data/CoT_Drive.pdf' target='_blank'>CoT-Drive: Efficient Motion Forecasting for Autonomous Driving with LLMs and Chain-of-Thought Prompting</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>,  Hanlin Kong, Bonan Wang, Chengyue Wang, Ye Wang, Zhengbing He, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Artificial Intelligence <strong>(TAI)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div> 
+       
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/SafeCast.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://petrichor625.github.io/data/SafeCast.pdf' target='_blank'>SafeCast: Risk-responsive motion forecasting for autonomous vehicles</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>,  Hanlin Kong,  Zhenning Li†, Chengzhong Xu
+                  <br>AI Open, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div> 
+
+
+
+
+        <div class="publication-item ai">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/fusion_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/abs/2412.20784' target='_blank'>DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles</a><br>
+                    Chengyue Wang*, <strong>Haicheng Liao*</strong>, Kaiqun Zhu, Guohui Zhang, Zhenning Li†<br> 
+                    <strong>Information Fusion</strong>, 2025<br> 
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>   
+
+    </div>
+
+
+    <div id="transportation-list" class="publication-list hidden">
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align:middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/HiT.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a>
+                  <br>
+                  <strong class="wrap">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu
+                  <br>
+                  Transportation Science <strong>(TS)</strong>, 2025<br> 
+                  <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='./img/TITS_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/abs/2502.20084' target='_blank'>Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Chengyue Wang, Kaiqun Zhu, Yilong Ren, Bolin Gao, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/COT_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Chain-of-Thought Guided Multimodal Large Language Models for Scene-Aware Accident Anticipation in Autonomous Driving</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Bin Rao, Haoyu Sun, Chengyue Wang, Qing Chang, Shengbo Eben Li, Chengzhong Xu, Zhenning Li†
+                  <br>
+                  IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/3D_real_time.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                <a href='https://arxiv.org/pdf/2409.01256?' target='_blank'>Real-time accident anticipation for autonomous driving through monocular depth-enhanced 3D modeling</a> 
+                  <br>
+                  <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Jaeyoung Lee, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†
+                  <br>
+                  Accident Analysis & Prevention <strong>(AAP)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CAVG.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/CAVG.pdf' target='_blank'>GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models</a> <br>
+                    <strong>Haicheng Liao</strong>, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu†
+                    <br>
+                    Communications in Transportation Research <strong>(COMMTR)</strong>, 2024<br> <span style="color: orangered;">Most Cited and Downloads Paper in COMMTR, 2024</span><br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Cognavive.jpg' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://petrichor625.github.io/data/Cognative.pdf' target='_blank'>A Cognitive-Based Trajectory Prediction Approach for Autonomous Driving</a> <br>
+                    <strong>Haicheng Liao</strong>, Yongkang Li, Zhenning Li, Chengyue Wang, Zhiyong Cui, Shengbo Eben Li, Chengzhong Xu†<br>
+                    IEEE Transactions on Intelligent Vehicles <strong>(TIV)</strong>, 2024 <br>
+                </div>
+              </div>
+            </td>
+          </tr> 
+          <br><br>
+        </div>
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/Bayesian.jpg' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2403.02622f' target='_blank'>Mitigating the impact of outliers in traffic crash analysis: A robust Bayesian regression approach with application to tunnel crash data</a><br>
+                    Zhenning Li*, <strong>Haicheng Liao*</strong>, Ruru Tang, Guofa Li, Yunjian Li, Chengzhong Xu†<br>
+                    Accident Analysis & Prevention <strong> (AAP)</strong>, 2023<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+
+        <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/World.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://arxiv.org/pdf/2403.02622f' target='_blank'>World Models for Autonomous Driving: An Initial Survey</a><br>
+                    Yanchen Guan*, <strong>Haicheng Liao*</strong>, Zhenning Li†, Jia Hu, Runze Yuan, Yunjian Li, Guohui Zhang, Chengzhong Xu†<br>
+                    IEEE Transactions on Intelligent Vehicles <strong>(IEEE TIV)</strong>, 2024<br>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+
+           <div class="publication-item transportation">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+            <td colspan="2" style="vertical-align: middle;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 20%; padding-right: 20px; min-width: 150px;">
+                  <img src='images/CE.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <a href='https://www.nature.com/articles/s44172-025-00474-7' target='_blank'>World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving</a><br>
+                    Yanchen Guan, <strong>Haicheng Liao</strong>, Chengyue Wang, Xingchen Liu, Jiaxun Zhang, Zhenning Li†<br>
+                    Communications Engineering <strong>(COMMSENG)</strong>, 2025<br> 
+                </div>
+              </div>
+            </td>
+          </tr>
+          <br><br>
+        </div>
+        
+    </div>
+
+    <!-- Container for 'Others' list (this was already correct) -->
+    <div class="other-publications-section hidden">
+        <h3 style="font-size: 18px; margin: 8px 0; padding: 0; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 20px;"> Other Publications </h3>
+        <ol id="paper-list">
+             <br /> 
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">TRC'30</span>]</strong> "Towards Human-like Trajectory Prediction for Autonomous Driving: A Cognitive-inspired Lightweight Model."<br>
+                - <em>The 30th Anniversary of Transportation Research Part C </em> <strong>(TRC-30) (Transportation Conf., <span style="color: orangered;">Oral Presentation</strong>)<br>
+                -  <u style="text-decoration: underline;">Haicheng Liao</u>, Yongkang Li, Yanchen Guan, Zhenning Li,  Chengyue Wang, Zilin Bian, Ziyuan Pu, Jia Hu, Zhiyong Cui<br>
+            </p>   
+        </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">CICTP'23</span>]</strong> "An Efficient Bayesian Robit Model for Traffic Safety Modeling."<br>
+                - <em>COTA (Chinese Overseas Transportation Association) International Conference of Transportation Professionals</em> <strong> (Transportation Conf.)</strong><br>
+                -  <u style="text-decoration: underline;">Haicheng Liao</u>, Huanming Shen, Bonan Wang,  Chengyue Wang, Bin Rao, Hao Yu, Chengzhong Xu, Zhenning Li<br>
+                - <a href='https://ascelibrary.org/doi/abs/10.1061/9780784484869.152' target='_blank'>[Paper]</a><br>
+            </p>   
+        </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">CICTP'25</span>]</strong> "Improving Visual Grounding for Autonomous Driving with Large Language Models."<br>
+                - <em>COTA (Chinese Overseas Transportation Association) International Conference of Transportation Professionals</em> <strong> (Transportation Conf., <span style="color: orangered;">Best Paper Award</span>)</strong><br>
+                - <u style="text-decoration: underline;">Haicheng Liao</u>, Huanming Shen, Bonan Wang, Chengyue Wang, Bin Rao, Hao Yu, Chengzhong Xu, Zhenning Li<br>
+                 - <a href='https://ascelibrary.org/doi/abs/10.1061/9780784486269.027' target='_blank'>[Paper]</a><br>
+            </p>   
+        </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">TRB'24</span>]</strong> "Achieving Human-Like Trajectory Prediction for Autonomous Vehicles: A Behavior-Aware Approach."<br>
+                - <em>The 103th Transportation Research Board Annual Meeting</em> <strong> (Top Transportation Conf., <span style="color: orangered;">Oral Presentation, AR: 174/4385 ≈ 3.6%</span>)</strong><br>
+                -  <u style="text-decoration: underline;">Haicheng Liao</u>, Hanlin Kong, Huanming Shen, Zhenning Li, Ruru Tang, Ziyuan Pu, Shengbo Li, Chengzhong Xu<br>
+                - <a href='https://annualmeeting.mytrb.org/OnlineProgramArchive/Details/20918' target='_blank'>[Paper]</a><br>
+            </p>   
+        </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">TRB'24</span>]</strong> "Lightweight Human Observation-inspired Trajectory Prediction for Autonomous Driving."<br>
+                - <em>The 103th Transportation Research Board Annual Meeting</em> <strong> (Top Transportation Conf.)</strong><br>
+                -  Yongkang Li*, <u style="text-decoration: underline;">Haicheng Liao</u>*, Shangqian Liu, Zhenning Li, Wenyu Li, Kai Zhang, Shengbo Li, Chengzhong Xu<br>
+            </p>   
+        </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">AAP'24</span>]</strong> "Efficient and robust estimation of single-vehicle crash severity: A mixed logit model with heterogeneity in means and variances."<br>
+                - <em>Accident Analysis & Prevention</em>  <strong> (Transportation Journal)</strong> <br>
+                - Zhenning Li, Chengyue Wan, <u style="text-decoration: underline;">Haicheng Liao</u>, Guofa Li, Chengzhong Xu<br>
+                - <a href='https://www.sciencedirect.com/science/article/pii/S0001457523004931' target='_blank'>[Paper]</a><br>
+            </p>
+            </li>
+            <li>
+            <p>
+                <strong>[<span style="color: darkblue;">Chain'24</span>]</strong> "Steering the Future: Redefining Intelligent Transportation Systems with Foundation Models."<br>
+                - <em>Chain</em>  <strong>(Transportation Journal)</strong> <br>
+                - Zhenning Li, Zhiyong Cui, <u style="text-decoration: underline;">Haicheng Liao</u>, John Ash, Guohui Zhang, Chengzhong Xu, Yinhai Wang<br>
+                - <a href='data/ITS.pdf' target='_blank'>[Paper]</a><br>
+            </p>
+            </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">ICRA'25</span>]</strong> "DRIVE: Dependable Robust Interpretable Visionary Ensemble Framework in Autonomous Driving."<br>
+                - <em>The 28th European Conference on Artificial Intelligence </em>  <strong> (Robotics Conf.) </strong><br>
+                - Songning Lai, Tianlang Xue, Hongru Xiao, Lijie Hu, Jiemin Wu, Ninghui Feng, Runwei Guan, <u style="text-decoration: underline;">Haicheng Liao</u>,  Zhenning Li, Yutao Yue<br>
+                - <a href='https://arxiv.org/pdf/2409.10330' target='_blank'>[Paper]</a><br>
+            </p>
+            </li>
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">MM'25</span>]</strong> "Eyes on the Road, Mind Beyond Vision: Context-Aware Multi-modal Enhanced Risk Anticipation."<br>
+                - <em>The 33rd ACM International Conference on Multimedia </em>  <strong> (AI Conf.) </strong><br>
+                - Jiaxun Zhang, <u style="text-decoration: underline;">Haicheng Liao</u>, Yumu Xie, Chengyue Wang, Yanchen Guan, Bin Rao, Zhenning Li<br>
+                - <a href='https://arxiv.org/pdf/2507.06444' target='_blank'>[Paper]</a><br>
+            </p>
+            </li>
+
+
+
+        <li>
+            <p>
+                <strong>[<span style="color: darkblue;">MM'25</span>]</strong> "Learning New Concepts, Remembering the Old: Continual Learning for Multimodal Concept Bottleneck Models."<br>
+                - <em>The 33rd ACM International Conference on Multimedia </em>  <strong> (AI Conf.) </strong><br>
+                - Songning Lai, Mingqian Liao, Zhangyi Hu, Jiayu Yang, Wenshuo Chen, Hongru Xiao, Jianheng Tang, <strong>Haicheng Liao</strong>, Yutao Yue<br>
+                - <a href='https://dl.acm.org/doi/abs/10.1145/3746027.3758157' target='_blank'>[Paper]</a><br>
+            </p>
+            </li>
+
+        </ol>
+    </div>
+
+    </div> 
+  </div> 
+
+  <div class="container">
+        <h2>Mentored Students</h2>
+ 
+        <!-- 2025 -->
+        <h4 style="margin-top: 15px; margin-bottom: 5px;"> <span style="color: rgb(247, 54, 0);">2025</span></h4>
+        <p> <a href='https://scholar.google.com/citations?user=wG_tV-0AAAAJ&hl=zh-CN&oi=ao' target='_blank'><b>Huanming Shen</b></a>: UESTC (B.S.) ---> Tsing Hua University (Ph.D)</p>  
+        <p> <b>Yuxing Jiao</b>: BIT (B.S.) --> Fudan University (Ph.D) </p>
+        <p> <b>Xinyi Li</b>: UESTC (B.S.) ---> Peking University (Shenzhen) (M.S.) </p>
+        <p> <b>Yongjie Qin</b>: WHU (B.S.) ---> Wuhan University (Shenzhen) (M.S.) </p>
         
 
+        <!-- 2024 -->
+       <h4 style="margin-top: 15px; margin-bottom: 5px;"> <span style="color: rgb(247, 54, 0);">2024</span></h4>
+           <p><a href='https://scholar.google.com/citations?user=XocWx_UAAAAJ&hl=zh-CN&oi=ao' target='_blank'><b>Yongkang Li</b></a>: UESTC (B.S.) --> Purdue University (Ph.D) 
+        </p>
+        <p> <a href='https://scholar.google.com/citations?user=BKOYPqAAAAAJ&hl=zh-CN&oi=ao' target='_blank'><b>Hanlin Kong</b></a>: UESTC (B.S.) --> Zhejiang University (Ph.D)
+        </p>
+        <p> <b>Haoyu Sun</b>: UESTC (B.S.) --> Tongji University (Ph.D)
+        </p>
+        <p> <a href='https://scholar.google.com/citations?user=ulCl_mEAAAAJ&hl=zh-CN&oi=ao' target='_blank'><b>Xinpeng Qin</b></a>: UESTC (B.S.) ---> Tsing Hua University (M.S.)</p>
+        <p> <b>Kewei Xu</b>: UESTC (B.S.) --> Nanjing University (M.S.)</p>
+        <p><b>Yuxuan He</b>: UESTC (B.S.) --> Shanghai Jiao Tong University (M.S.)  </p>
+         <p>  <a href='https://junxianyanguestc.github.io/' target='_blank'><b>Junxian Yang</b></a>: UESTC (B.S.) --> University of Science and Technology of China (M.S.)</p>
+         <p> <b>Xuelin Li</b>: UESTC (B.S.) --> Shanghai Jiao Tong University (M.S.)  </p>
+      
+        
+        <!-- 2023 -->
+      <h4 style="margin-top: 15px; margin-bottom: 5px;"> <span style="color: rgb(247, 54, 0);">2023</span></h4>
 
-			    <!-- <div   <a href='https://clustrmaps.com/site/1c4nb'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=300&t=tt&d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ&co=2d78ad&ct=ffffff'/></a>
-       </div> -->
 
-			
-<!-- <a href='https://clustrmaps.com/site/1c4nb' title='Visit tracker'>
-        <img src='//clustrmaps.com/map_v2.png?cl=080808&w=300&t=tt&d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ&co=ffffff&ct=808080'/>
-    </a>
-			 -->
-<!-- <div style="width: 300px; margin: 0 auto; padding: 10px; background-color: #fff; border-radius: 10px;">
-			<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
-</div> -->
+        <p> <a href='https://wenxuanzeng.netlify.app/' target='_blank'><b>Wenxuan Zeng</b></a>: UESTC (B.S.) --> Peking University (Ph.D) 
+        </p>
+        <p> <b>Shengzhe Lin</b>: HFUT (B.S.) --> Southeast University (M.S.) 
+        </p>
+        <p> <a href='https://scholar.google.com/citations?user=Zc0jchEAAAAJ&hl=zh-CN&oi=ao' target='_blank'><b>Shangqian Liu</b></a>: HZAU (B.S.), UM (M.S.)
+        </p>
+        <p> <a href='https://scholar.google.com/citations?user=suV_vv0AAAAJ&hl=zh-CN' target='_blank'><b>Bonan Wang</b></a>: SUST (B.S.), UM (M.S.)</p>
+        
+   ✨<span style="color: rgb(189, 54, 4);">If you are passionate about research and innovation, I warmly invite you to join us on this exciting academic journey!</span>
+     
+    </div>
 
-<div style="width: 180px; margin: 0 auto; padding: 10px; background-color: #fff; border-radius: 10px;">
-	<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ"></script>
-	</div>
-			
-<div id="footer">
-	<div id="footer-text"></div>
-</div>
-Last update: 09/2025 by Haicheng Liao.
+     
+    </div>
+
+    <div class="container">
+        <h2>Academic Awards</h2>
+        <br>
+        
+
+            <p><b>Best Poster</b>, The 5th Macao International Conference On Smart City Technologies,  <em>2025</em> </p>
+        <p>
+            <strong>Best Paper Award</strong>, The 25th COTA International Conference of Transportation Professionals (CICTP 2025), 2025<br>
+        </p>
+
+        <p>
+            <strong>Best Poster Award</strong>, The 5th Macao International Conference On Smart City Technologies, 2025<br>
+        </p>
+
+        <p>
+            <strong>Excellent Poster</strong>, The 5th Macao International Conference On Smart City Technologies, 2025<br>
+        </p>
+
+        <p> Guangdong-Hong Kong-Macao Greater Bay Area Taihu Scholarship <span style="color: rgb(189, 54, 4);">(only 6 places for UM)</span>, <em>2024</em>
+   </p>
+        
+        <p>
+            <strong>Outstanding Presentation </strong>, Macao Symposium on Cloud Computing and Intelligent Driving (CCID), 2024<br>
+            </p>
+
+
+        <p><b>Outstanding Poster Presentation</b>, Postgraduate Forum IoTSC, <em>2024</em></p>
+        <p> Huiding Science and Technology Scholarship of UESTC <span style="color: rgb(189, 54, 4);">(only 6 places for UESTC)</span>, <em>2022</em> 
+        </p>
+
+    <p> <b>First Prize</b>, University of Electronic Science and Technology of China Scholarship for Outstanding Students, <em>2022</em>
+</p>
+<p> <b>First Prize</b>, University of Electronic Science and Technology of China Scholarship for Outstanding Students, <em>2021</em>
+</p>
+<p>  <b>First Prize</b>, University of Electronic Science and Technology of China Scholarship for Outstanding Students, <em>2020</em> 
+</p>
+
+
+    </div>
+
+
+            <div class="container">
+        <h2>Academic Services</h2>
+        <br>
+        <strong>Referee for Journals:</strong><br>
+        <p>
+    TR-Part C, TR-Part F, AAP, IEEE-(TPAMI, TNNLS, TITS, TASE,  TIV, TCSVT, TETCI,  RAL, Access), OJ-ITS, ESWA, Travel Behaviour and Society, Scientific Reports, Knowledge-Based Systems, Information Fusion, CVIU
+        </p>     
+        
+        
+        <strong>Referee for AI Conferences:</strong><br>
+        <p>
+        ICLR, ICML, NeurIPS, ICCV, CVPR, AAAI, WACV, IJCAI, ACM'MM, ICRA, IROS, CICTP
+        </p>
+        
+    </div>
+
+
+
+        <div class="container">
+        <h2>Main Competition Awards</h2>
+<!-- <ul> -->
+
+    
+<p><b>National Second Prize</b>, The 10th China Graduate Contest on Smart-City Technology and Creative Design, <em>2024</em>
+</p>
+<p> <b>National Second Prize</b>, The 6th China Graduate Artificial Intelligence Innovation Competition,  <em>2024</em>
+</p>
+
+
+
+
+
+<p> <b>National First Prize</b>,  China University Computer Competition, <span class="bold-large-text"> <span style="color: rgb(189, 54, 4);"> Rank 1st </span>, (1/6,500+ teams)</span>, <em>2021</em> 
+</p>
+<p> <b>Highest Prize (Special Prize)</b>, Sichuan Province Computer Works Competition, <em>2021</em> 
+</p>
+<p> <b>Provincial Special Prize</b>, Zhong Gong Cup Sichuan Collegiate Computer Competition,  <em>2021</em>
+</p>
+
+
+<p><b>National Second Prize</b>, 13th National University Student Information Security Competition,  <span class="bold-large-text"> <span style="color: rgb(189, 54, 4);">(≈0.8% of 4,500) </span>, <em>2020</em> 
+</p>
+    <!-- </div> -->
+
+
+
+        <div style="width: 180px; margin: 20px auto; padding: 10px; background-color: #fff; border-radius: 10px;">
+      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ"></script>
+    </div>
+        
+    <div id="footer">
+      <div id="footer-text"></div>
+    </div>
+    <div class="last-update">
+      Last update: 10/2025 by Haicheng Liao.
+    </div>
+
+
+<script>
+
+
+        function filterPublications(category) {
+     
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(button => {
+                if (button.getAttribute('onclick').includes(`'${category}'`)) {
+                    button.classList.add('active-filter');
+                } else {
+                    button.classList.remove('active-filter');
+                }
+            });
+
+            const highlightList = document.getElementById('highlight-list');
+            const allList = document.getElementById('all-list');
+            const aiList = document.getElementById('ai-list');
+            const transportationList = document.getElementById('transportation-list');
+            const otherList = document.querySelector('.other-publications-section');
+
+            if (highlightList) highlightList.classList.add('hidden');
+            if (allList) allList.classList.add('hidden');
+            if (aiList) aiList.classList.add('hidden');
+            if (transportationList) transportationList.classList.add('hidden');
+            if (otherList) otherList.classList.add('hidden');
+
+            if (category === 'highlight') {
+                 if (highlightList) highlightList.classList.remove('hidden');
+            } else if (category === 'all') {
+                if (allList) allList.classList.remove('hidden');
+            } else if (category === 'ai') {
+                if (aiList) aiList.classList.remove('hidden');
+            } else if (category === 'transportation') {
+                if (transportationList) transportationList.classList.remove('hidden');
+            } else if (category === 'others') {
+                if (otherList) otherList.classList.remove('hidden');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            filterPublications('highlight');
+        });
+        
+        function smerf_start() {
+          // console.log('Mouse over');
+        }
+        function smerf_stop() {
+          // console.log('Mouse out');
+        }
+
+    </script>
 </body>
-
-
-
-
-
-
-
-
-</body></html>
+</html>
