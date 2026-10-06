@@ -140,6 +140,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 .awards-section p span[style*="color:"] { color: #795d47 !important; }
 .site-footer { box-sizing: border-box; width: calc(100% - 32px); max-width: 890px; margin: 22px auto 28px; padding: 0 16px; font-size: 13px; line-height: 1.7; text-align: center; color: #686d75; }
 .visitor-map { box-sizing: border-box; max-width: 100%; overflow: hidden; }
+.visitor-stats-link { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; font-size: 13px; line-height: 1.5; color: #416fa6; }
+.visitor-stats-link svg { flex: 0 0 18px; }
+.visitor-map .visitor-status { margin: 0 0 6px; font-size: 12px; line-height: 1.5; color: #686d75; text-align: center; }
+.visitor-map .visitor-status[hidden] { display: none; }
 
 /* A readable bibliography with continuous numbering across year groups. */
 .archive-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
@@ -596,8 +600,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 </section>
            
 
-<div class="visitor-map" style="width: 300px; margin: 0 auto; padding: 10px; background-color: #fff; border-radius: 10px;">
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=549ac2&w=a&t=tt&d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ&co=fdfdfd&ct=100000'></script>	</div>
+<div class="visitor-map" id="visitor-statistics" style="width: 300px; margin: 0 auto; padding: 10px; background-color: #fff; border-radius: 10px;">
+<p class="visitor-status" role="status" hidden>Statistics service temporarily unavailable.</p>
+<script async onerror="this.closest('.visitor-map').querySelector('.visitor-status').hidden = false;" type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=549ac2&w=a&t=tt&d=HiqDYfYQu-dAfkBwBWXS62QyHR2buAka_T7Sqk8QNnQ&co=fdfdfd&ct=100000'></script>
+<a class="visitor-stats-link" href="https://clustrmaps.com/site/1c4nb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg><span>Visitor statistics ↗</span></a>
+<noscript><p class="visitor-status">Enable JavaScript to view the visitor map.</p></noscript>
+</div>
 
 <!-- </p><a href="https://www.easycounter.com/">
    <img src="https://www.easycounter.com/counter.php?2385882538"
