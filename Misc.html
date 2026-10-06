@@ -66,6 +66,8 @@ h2, h6 { font-size: 21px; line-height: 1.35; }
   
 /* Shared spacing and navigation for the original three-page academic site. */
 body { margin: 0; color: #25272b; }
+/* Keep mobile browser text sizing predictable while retaining user zoom. */
+html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .container, .menu_container { box-sizing: border-box; width: calc(100% - 32px); max-width: 890px; }
 .container { padding: 30px 30px 28px; }
 .menu_container { padding: 14px 20px; }
@@ -177,6 +179,48 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
   .publication-year > ol { padding-left: 25px; }
   .publication-year li { padding-left: 1px; font-size: 15px; line-height: 1.75; }
   .publication-year li > em { font-size: 14.5px; }
+}
+
+/* Phone portrait and narrow split-screen layouts share a single reading column. */
+@media (max-width: 640px) {
+  .container, .menu_container { width: calc(100% - 24px); margin-top: 12px; margin-bottom: 12px; }
+  .container { padding: 24px clamp(16px, 4vw, 24px); }
+  .menu_container { padding: 8px 12px; }
+  .site-nav { flex-wrap: wrap; column-gap: clamp(16px, 5vw, 25px); row-gap: 4px; }
+  .site-nav a { display: flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 44px; max-width: 100%; font-size: 17px; overflow-wrap: anywhere; }
+  .profile-top { display: block; margin-bottom: 26px; padding: 0; }
+  .profile-top #me { width: 142px; height: 142px; margin: 0 0 18px; }
+  .profile-details h1 { font-size: 28px; overflow-wrap: anywhere; }
+  .profile-details .chinese-name { display: inline-block; margin-left: 3px; }
+  .profile-contact { margin-top: 14px; }
+  .profile-contact .profile-email { overflow-wrap: anywhere; }
+  .profile-contact .profile-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; max-width: 320px; margin-top: 5px; font-size: 14px; }
+  .profile-links a { display: flex; align-items: center; box-sizing: border-box; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; }
+  .profile-links a + a { border-left: 0; padding-left: 0; }
+  .about-home p.bio-paragraph { overflow-wrap: anywhere; }
+  .news-header { flex-wrap: wrap; gap: 4px 12px; padding: 10px 14px; }
+  .news-header > a { display: flex; align-items: center; min-height: 36px; max-width: 100%; white-space: normal; }
+  .news-scroll ul { padding: 4px 14px 8px; }
+  .news-scroll li { display: block; padding: 10px 0 12px; }
+  .news-scroll time { display: block; margin-bottom: 3px; font-size: 12px; line-height: 1.5; }
+  .news-scroll p { font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+  .news-scroll li.news-year-start { margin-top: 5px; padding-top: 13px; }
+  .filter-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(44px, 1fr) repeat(3, minmax(0, 1fr)); gap: 7px; }
+  .filter-btn { box-sizing: border-box; min-width: 0; min-height: 44px; margin: 0; padding: 8px 9px; font-size: 14px; line-height: 1.45; white-space: normal; overflow-wrap: anywhere; }
+  .filter-btn:nth-child(1) { grid-column: span 2; }
+  .filter-btn:nth-child(2) { grid-column: span 1; }
+  .filter-btn:nth-child(3), .filter-btn:nth-child(n + 4) { grid-column: span 3; }
+  .detail-section > h2, .archive-heading h2, #selected-heading { overflow-wrap: anywhere; }
+  .detail-section > p, .mentoring-section .mentoring-student { overflow-wrap: anywhere; }
+  .mentoring-year-group > summary { box-sizing: border-box; min-height: 44px; }
+  .mentoring-year-group:first-of-type > summary { padding-top: 10px; }
+  .mentoring-students { padding-left: 12px; }
+  .mentoring-section .mentoring-student { margin: 9px 0; }
+  .year-nav { gap: 4px 12px; padding-bottom: 10px; }
+  .year-nav a { display: flex; align-items: center; justify-content: center; box-sizing: border-box; min-width: 44px; min-height: 44px; }
+  .other-publications-section ol { padding-left: 22px; }
+  .other-publications-section li { overflow-wrap: anywhere; }
+  .site-footer { width: calc(100% - 24px); padding: 0 8px; overflow-wrap: anywhere; }
 }
 
 </style>
