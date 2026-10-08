@@ -270,7 +270,9 @@ a:focus-visible, .filter-btn:focus-visible { outline: 2px solid #4987fa; outline
 .publication-item .paper-authors { margin: 0 0 4px; font-size: 15.5px; line-height: 1.65; }
 .publication-item .paper-venue { margin: 0; font-size: 15.5px; line-height: 1.65; }
 .publication-item .paper-venue > strong { font-weight: 700; }
-.publication-item .paper-venue .github-stars { display: inline-block; margin-left: 8px; color: #c62828; font-weight: 600; white-space: nowrap; }
+.publication-item .paper-venue .github-stars,
+.publication-item .paper-venue .publication-accolade { color: #c62828; font-family: inherit; font-size: inherit; font-weight: 600; }
+.publication-item .paper-venue .github-stars { display: inline-block; margin-left: 8px; white-space: nowrap; }
 .publication-item .paper-venue .github-stars:hover { color: #a61f1f; text-decoration: underline; }
 .publication-item .paper-notes { margin: 4px 0 0; font-size: 13px; line-height: 1.65; }
 @media (max-width: 520px) {
@@ -531,7 +533,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
       </div>
       <div class="news-scroll" tabindex="0" role="region" aria-label="Latest three research updates; scroll for earlier news">
         <ul>
-<li data-papers="aij"><time datetime="2026-10">2026/10</time><p>Our paper <a href="data/AIJ_2026.pdf" title="Adaptive Large Language Model Reasoning for Autonomous Driving Decision-Making" target="_blank" rel="noopener">Adaptive LLM reasoning for</a> AD has been accepted by <strong>Artificial Intelligence (AIJ)</strong>.</p></li>
+<li data-papers="aij"><time datetime="2026-10">2026/10</time><p>Our paper <a href="data/AIJ_2026.pdf" title="Adaptive Large Language Model Reasoning for Autonomous Driving Decision-Making" target="_blank" rel="noopener">Adaptive LLM reasoning for AD</a> has been accepted by <strong>Artificial Intelligence (AIJ)</strong>.</p></li>
 <li data-papers="engineering"><time datetime="2026-09">2026/09</time><p>Our paper <a href="data/Engineering_2026.pdf" title="End-to-End Traffic Accident Anticipation and Localization for Autonomous Driving" target="_blank" rel="noopener">End-to-End Accident Anticipation</a> has been accepted by <strong>Engineering</strong> (CAE Flag Journal).</p></li>
 <li data-papers="swift"><time datetime="2026-07">2026/07</time><p>Our paper <a href="https://doi.org/10.1109/TPAMI.2026.3709672" title="SWIFT: A Small-World Interaction Framework for Flow-Aware Trajectory Prediction in Autonomous Driving" target="_blank" rel="noopener">SWIFT</a> has been accepted by <strong>IEEE TPAMI</strong>.</p></li>
 <li data-papers="sfm"><time datetime="2026-06">2026/06</time><p>Our paper <a href="data/SFM_ECCV_2026.pdf" title="SFM: Taming State Space Models for Text-to-Motion via Spatial-Frequency Modeling" target="_blank" rel="noopener">SFM</a> has been accepted by <strong>ECCV 2026</strong>.</p></li>
@@ -539,22 +541,24 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li data-papers="think e3ad"><time datetime="2026-02">2026/02</time><p>Two papers have been accepted by <strong>CVPR 2026</strong>: <a href="https://arxiv.org/abs/2512.03454" title="Think Before You Drive: World Model-Inspired Multimodal Grounding for Autonomous Vehicles" target="_blank" rel="noopener">Think Before You Drive</a> and <a href="https://arxiv.org/abs/2512.04733" title="E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving" target="_blank" rel="noopener">E3AD</a>.</p></li>
 <li data-papers="roar"><time datetime="2026-02">2026/02</time><p>Our paper <a href="https://doi.org/10.1016/j.aap.2026.108414" title="ROAR: Robust accident recognition and anticipation for autonomous driving" target="_blank" rel="noopener">ROAR</a> has been published in <strong>Accident Analysis &amp; Prevention</strong>.</p></li>
 <li class="news-year-start" data-papers="semantic resist"><time datetime="2025-11">2025/11</time><p>Two papers have been accepted by <strong>AAAI 2026</strong>: <a href="publications.html#paper-semantic" title="Differentiable Semantic Meta-Learning Framework for Long-Tail Motion Forecasting in Autonomous Driving">Differentiable Semantic Meta-Learning</a> and <a href="publications.html#paper-resist" title="Predict and Resist: Long-Term Accident Anticipation under Sensor Noise">Predict and Resist</a>.</p></li>
+<li data-papers="cot-accident"><time datetime="2025-11">2025/11</time><p>Our paper <a href="https://doi.org/10.1109/TITS.2025.3597411" title="Chain-of-Thought Guided Multimodal Large Language Models for Scene-Aware Accident Anticipation in Autonomous Driving" target="_blank" rel="noopener">Chain-of-Thought Guided Accident Anticipation</a> has been published in <strong>IEEE TITS</strong>.</p></li>
+<li data-papers="concepts"><time datetime="2025-10">2025/10</time><p>Our paper <a href="https://doi.org/10.1145/3746027.3758157" title="Learning New Concepts, Remembering the Old: Continual Learning for Multimodal Concept Bottleneck Models" target="_blank" rel="noopener">Learning New Concepts, Remembering the Old</a> appeared at <strong>ACM MM 2025</strong>.</p></li>
+<li data-papers="latte"><time datetime="2025-10">2025/10</time><p>Our paper <a href="publications.html#paper-latte" title="LATTE: Lightweight Attention-based Traffic Accident Anticipation Engine">LATTE</a> has been published in <strong>Information Fusion</strong>.</p></li>
 <li data-papers="safecast"><time datetime="2025-08">2025/08</time><p>Our paper <a href="data/SafeCast.pdf" title="Safecast: Risk-responsive motion forecasting for autonomous vehicles" target="_blank" rel="noopener">SafeCast</a> has been accepted by <strong>AI Open</strong>.</p></li>
 <li data-papers="satp"><time datetime="2025-07">2025/07</time><p>Our paper <a href="https://ieeexplore.ieee.org/document/11129935" title="SA‑TP 2 : A Safety-Aware Trajectory Prediction and Planning Model for Autonomous Driving" target="_blank" rel="noopener">SA-TP²</a> has been accepted by <strong>IEEE Transactions on Robotics (TRO)</strong>.</p></li>
 <li data-papers="scene-generation"><time datetime="2025-07">2025/07</time><p>Our paper <a href="https://www.nature.com/articles/s44172-025-00474-7" title="World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving" target="_blank" rel="noopener">World Model-Based Scene Generation</a> has been accepted by <strong>Communications Engineering</strong>.</p></li>
 <li data-papers="eyes"><time datetime="2025-07">2025/07</time><p>Our paper <a href="publications.html#paper-eyes" title="Eyes on the Road, Mind Beyond Vision: Context-Aware Multi-modal Enhanced Risk Anticipation">Eyes on the Road, Mind Beyond Vision</a> has been accepted by <strong>ACM MM 2025</strong>.</p></li>
+<li data-papers="cictp"><time datetime="2025-07">2025/07</time><p>Our paper <a href="publications.html#paper-cictp" title="Improving Visual Grounding for Autonomous Driving with Large Language Models">Improving Visual Grounding</a> received a <strong>Best Paper Award</strong> at <strong>CICTP 2025</strong>.</p></li>
 <li data-papers="amd"><time datetime="2025-06">2025/06</time><p>Our paper <a href="https://arxiv.org/pdf/2507.01801" title="AMD: Adaptive Momentum and Decoupled Contrastive Learning Framework for Robust Long-Tail Trajectory Prediction" target="_blank" rel="noopener">AMD</a> has been accepted by <strong>ICCV 2025</strong>.</p></li>
+<li data-papers="demo"><time datetime="2025-06">2025/06</time><p>Our paper <a href="https://arxiv.org/abs/2412.20784" title="DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles" target="_blank" rel="noopener">DEMO</a> has been published in <strong>Information Fusion</strong>.</p></li>
 <li data-papers="beyond"><time datetime="2025-05">2025/05</time><p>Our paper <a href="https://arxiv.org/pdf/2505.06856" title="Beyond Patterns: Harnessing Causal Logic for Autonomous Driving Trajectory Prediction" target="_blank" rel="noopener">Beyond Patterns</a> has been accepted by <strong>IJCAI 2025</strong>.</p></li>
+<li data-papers="drive"><time datetime="2025-05">2025/05</time><p>Our paper <a href="https://doi.org/10.1109/ICRA55743.2025.11127884" title="DRIVE: Dependable Robust Interpretable Visionary Ensemble Framework in Autonomous Driving" target="_blank" rel="noopener">DRIVE</a> appeared at <strong>ICRA 2025</strong>.</p></li>
+<li data-papers="minds"><time datetime="2025-05">2025/05</time><p>Our paper <a href="https://arxiv.org/abs/2502.20084" title="Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights" target="_blank" rel="noopener">Minds on the Move</a> has been published in <strong>IEEE TITS</strong>.</p></li>
 <li data-papers="domain"><time datetime="2025-04">2025/04</time><p>Our paper <a href="publications.html#paper-domain" title="Domain-Enhanced Dual-Branch Model for Efficient and Interpretable Accident Anticipation">Domain-Enhanced Dual-Branch Model</a> has been accepted by <strong>Communications in Transportation Research</strong>.</p></li>
 <li data-papers="cot-drive"><time datetime="2025-04">2025/04</time><p>Our paper <a href="https://petrichor625.github.io/data/CoT_Drive.pdf" title="CoT-Drive: Efficient Motion Forecasting for Autonomous Driving with LLMs and Chain-of-Thought Prompting" target="_blank" rel="noopener">CoT-Drive</a> has been accepted by <strong>IEEE Transactions on Artificial Intelligence (TAI)</strong>.</p></li>
 <li data-papers="ts"><time datetime="2025-03">2025/03</time><p>Our paper <a href="https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366" title="Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach" target="_blank" rel="noopener">Human-like trajectory prediction</a> has been accepted by <strong>Transportation Science</strong>.</p></li>
+<li data-papers="nest"><time datetime="2025-02">2025/02</time><p>Our paper <a href="https://arxiv.org/abs/2412.11682" title="NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving" target="_blank" rel="noopener">NEST</a> appeared at <strong>AAAI 2025</strong> as an <strong>Oral Presentation</strong>.</p></li>
 <li data-papers="wake"><time datetime="2025-01">2025/01</time><p>Our paper <a href="https://ieeexplore.ieee.org/document/10839301" title="WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy" target="_blank" rel="noopener">WAKE</a> has been accepted by <strong>IEEE TPAMI</strong>.</p></li>
-<li data-papers="drive"><time datetime="2025">2025</time><p>Our paper <a href="https://doi.org/10.1109/ICRA55743.2025.11127884" title="DRIVE: Dependable Robust Interpretable Visionary Ensemble Framework in Autonomous Driving" target="_blank" rel="noopener">DRIVE</a> appeared at <strong>ICRA 2025</strong>.</p></li>
-<li data-papers="concepts"><time datetime="2025">2025</time><p>Our paper <a href="https://doi.org/10.1145/3746027.3758157" title="Learning New Concepts, Remembering the Old: Continual Learning for Multimodal Concept Bottleneck Models" target="_blank" rel="noopener">Learning New Concepts, Remembering the Old</a> appeared at <strong>ACM MM 2025</strong>.</p></li>
-<li data-papers="cot-accident minds"><time datetime="2025">2025</time><p>Two papers have been published in <strong>IEEE TITS</strong>: <a href="https://arxiv.org/pdf/2409.01256?" title="Chain-of-Thought Guided Multimodal Large Language Models for Scene-Aware Accident Anticipation in Autonomous Driving" target="_blank" rel="noopener">Chain-of-Thought Guided Accident Anticipation</a> and <a href="https://arxiv.org/abs/2502.20084" title="Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights" target="_blank" rel="noopener">Minds on the Move</a>.</p></li>
-<li data-papers="cictp"><time datetime="2025">2025</time><p>Our paper <a href="publications.html#paper-cictp" title="Improving Visual Grounding for Autonomous Driving with Large Language Models">Improving Visual Grounding</a> received a <strong>Best Paper Award</strong> at <strong>CICTP 2025</strong>.</p></li>
-<li data-papers="nest"><time datetime="2025">2025</time><p>Our paper <a href="https://arxiv.org/abs/2412.11682" title="NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving" target="_blank" rel="noopener">NEST</a> appeared at <strong>AAAI 2025</strong> as an <strong>Oral Presentation</strong>.</p></li>
-<li data-papers="demo latte"><time datetime="2025">2025</time><p>Two papers have been published in <strong>Information Fusion</strong>: <a href="https://arxiv.org/abs/2412.20784" title="DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles" target="_blank" rel="noopener">DEMO</a> and <a href="publications.html#paper-latte" title="LATTE: Lightweight Attention-based Traffic Accident Anticipation Engine">LATTE</a>.</p></li>
 </ul>
       </div>
     </section>
@@ -580,7 +584,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/Engineering_2026.pdf" target="_blank" rel="noopener">End-to-End Traffic Accident Anticipation and Localization for Autonomous Driving</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Bin Rao, Jiaxun Zhang, Haoyu Sun, Zhenning Li†, Chengzhong Xu, Hai Yang, Keqiang Li†</p>
-              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span style="color: orangered;">[CAE Flag Journal]</span></p>
+              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span class="publication-accolade">[CAE Flag Journal]</span></p>
             </div>
           </div>
           <br><br>
@@ -597,7 +601,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu</p>
-              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span></p>
+              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span class="publication-accolade">[Most Prestigious Journal in Transportation]</span></p>
             </div>
               </div>
             </td>
@@ -749,7 +753,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/Engineering_2026.pdf" target="_blank" rel="noopener">End-to-End Traffic Accident Anticipation and Localization for Autonomous Driving</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Bin Rao, Jiaxun Zhang, Haoyu Sun, Zhenning Li†, Chengzhong Xu, Hai Yang, Keqiang Li†</p>
-              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span style="color: orangered;">[CAE Flag Journal]</span></p>
+              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span class="publication-accolade">[CAE Flag Journal]</span></p>
             </div>
           </div>
           <br><br>
@@ -814,7 +818,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu</p>
-              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span></p>
+              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span class="publication-accolade">[Most Prestigious Journal in Transportation]</span></p>
             </div>
               </div>
             </td>
@@ -1815,7 +1819,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/Engineering_2026.pdf" target="_blank" rel="noopener">End-to-End Traffic Accident Anticipation and Localization for Autonomous Driving</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Bin Rao, Jiaxun Zhang, Haoyu Sun, Zhenning Li†, Chengzhong Xu, Hai Yang, Keqiang Li†</p>
-              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span style="color: orangered;">[CAE Flag Journal]</span></p>
+              <p class="paper-venue"><strong>Engineering</strong>, 2026 <span class="publication-accolade">[CAE Flag Journal]</span></p>
             </div>
           </div>
           <br><br>
@@ -1831,7 +1835,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://pubsonline.informs.org/doi/abs/10.1287/trsc.2023.0366?journalCode=trsc' target='_blank'>Towards Human-Like Trajectory Prediction: A Behavior-Centric Approach</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li†, Keqiang Li, Chengzhong Xu</p>
-              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span style="color: orangered;">[Most Prestigious Journal in Transportation]</span></p>
+              <p class="paper-venue">Transportation Science <strong>(TS)</strong>, 2025 <span class="publication-accolade">[Most Prestigious Journal in Transportation]</span></p>
             </div>
               </div>
             </td>
