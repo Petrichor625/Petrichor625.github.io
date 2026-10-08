@@ -118,6 +118,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 .bio-collaboration strong { font-weight: 700; color: #25272b; }
 .paper-authors .author-self, .publication-year .author-self, .other-publications-section .author-self { color: #15181d; font-weight: 700; text-decoration-line: underline; text-decoration-color: #8494a8; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-skip-ink: auto; }
 
+/* One visual treatment for oral presentations, rankings, awards, and repository stars. */
+.publication-accolade, .github-stars, .github-stars:visited { color: #c62828; font-family: inherit; font-size: 15.5px; font-style: normal; font-weight: 600; line-height: 1.65; }
+
 /* The lower sections use the same heading rhythm as Short Bio. */
 .detail-section > h2 { margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid #d5d7db; color: #15181d; font-size: 20px; line-height: 1.35; }
 .detail-section > p { margin: 11px 0; font-size: 15.5px; line-height: 1.75; }
@@ -192,6 +195,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 
 /* Keep the desktop's visual hierarchy and paired columns on phones. */
 @media (max-width: 640px) {
+  .publication-accolade, .github-stars, .github-stars:visited { font-size: 13px; line-height: 1.6; }
   .container, .menu_container { width: calc(100% - 16px); margin-top: 10px; margin-bottom: 10px; border-radius: 8px; }
   .container { padding: 22px clamp(14px, 3.6vw, 22px); }
   .menu_container { padding: 8px 12px; }
@@ -264,7 +268,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             <strong>[<span style="color: rgb(0, 0, 0);">Engineering'26</span>]</strong>
             <a href="data/Engineering_2026.pdf" target="_blank" rel="noopener" style="color: inherit;">End-to-End Traffic Accident Anticipation and Localization for Autonomous Driving</a>.<br>
             <strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Bin Rao, Jiaxun Zhang, Haoyu Sun, Zhenning Li†, Chengzhong Xu, Hai Yang, Keqiang Li†<br>
-            <em><strong>Engineering</strong>, 2026 — Flagship Journal of the Chinese Academy of Engineering</em><br>
+            <em><strong>Engineering</strong>, 2026 — <span class="publication-accolade">Flagship Journal of the Chinese Academy of Engineering</span></em><br>
       </li>
 
 <li id="paper-aij">
@@ -386,13 +390,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li id="paper-cictp">
                <strong>[<span style="color: rgb(0, 0, 0);">CICTP'25</span>]</strong> Improving Visual Grounding for Autonomous Driving with Large Language Models.<br>
                <strong class="author-self">Haicheng Liao</strong>, Huanming Shen, Bonan Wang, Chengyue Wang, Bin Rao, Hao Yu, Chengzhong Xu, Zhenning Li<br>
-               <em>COTA International Conference of Transportation Professionals, 2025</em>    <em><span style="color: rgb(255, 53, 53);">Best Paper Award</span></em><br>
+               <em>COTA International Conference of Transportation Professionals, 2025</em>    <em><span class="publication-accolade">Best Paper Award</span></em><br>
             </li>
 
 <li id="paper-scene-generation">
          <strong>[<span style="color: rgb(0, 0, 0);">CE'25</span>]</strong> World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving.<br>
         Yanchen Guan, <strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Xingchen Liu, Jiaxun Zhang, Zhenning Li <br>
-         <em>Communications Engineering, 2025</em> <em><span style="color: rgb(255, 53, 53);">[Nature Portfolio]</span></em><br>
+         <em>Communications Engineering, 2025</em> <em><span class="publication-accolade">[Nature Portfolio]</span></em><br>
          </li>
 
 <li id="paper-minds">
@@ -429,7 +433,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li id="paper-nest">
             <strong>[<span style="color: rgb(0, 0, 0);">AAAI'25</span>]</strong> NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving.<br>
             Chengyue Wang*, <strong class="author-self">Haicheng Liao</strong>*, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, Chengzhong Xu, Zhenning Li 
-            <br><em>Annual AAAI Conference on Artificial Intelligence, 2025</em> <em><span style="color: rgb(255, 53, 53);">Oral Presentation (600/12957 ≈ 4.6%)</span></em> 
+            <br><em>Annual AAAI Conference on Artificial Intelligence, 2025</em> <em><span class="publication-accolade">Oral Presentation (600/12957 ≈ 4.6%)</span></em>
          </li>
 
 <li id="paper-demo">
@@ -470,7 +474,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li>
             <strong>[<span style="color: rgb(0, 0, 0);">MM'24</span>]</strong> When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models.
             <br><strong class="author-self">Haicheng Liao</strong>, Yongkang Li,  Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li<br>
-            <em>ACM International Conference on Multimedia, 2024</em> <em><span style="color: rgb(255, 53, 53);">Oral Presentation (174/4385 ≈ 3.9%)</span></em> <br>
+            <em>ACM International Conference on Multimedia, 2024</em> <em><span class="publication-accolade">Oral Presentation (174/4385 ≈ 3.9%)</span></em> <br>
          </li>
 
 <li>
@@ -503,7 +507,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                <strong>[<span style="color: rgb(0, 0, 0);">IJCAI'24</span>]</strong> CDSTraj: Characterized Diffusion and Spatial-Temporal Interaction Network for Trajectory Prediction in Autonomous Driving.<br>
                <strong class="author-self">Haicheng Liao</strong>, Xuelin Li, Yongkang Li, Hanlin Kong,  Chengyue Wang, Bonan Wang, Yanchen Guan, KaHou Tam, Zhenning Li <br>
                <em>International Joint Conference on Artificial Intelligence, 2024</em> <br>
-               <em><span style="color: rgb(255, 53, 53);">Ranked #1 SSRN’s Top Downloads Papers (60 Days) in Robotics!</span></em><br>
+               <em><span class="publication-accolade">Ranked #1 SSRN’s Top Downloads Papers (60 Days) in Robotics!</span></em><br>
             </li>
 
 <li>
@@ -528,13 +532,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li>
                <strong>[<span style="color: rgb(0, 0, 0);">TRC-30</span>]</strong> Towards Human-like Trajectory Prediction for Autonomous Driving: A Cognitive-inspired Lightweight Model.<br>
                <strong class="author-self">Haicheng Liao</strong>, Yongkang Li, Yanchen Guan, Zhenning Li,  Chengyue Wang, Zilin Bian, Ziyuan Pu, Jia Hu, Zhiyong Cui<br>
-               <em>The 30th Anniversary of Transportation Research Part C, 2024 </em>  <em><span style="color: rgb(255, 53, 53);">Oral Presentation</span></em><br>
+               <em>The 30th Anniversary of Transportation Research Part C, 2024 </em>  <em><span class="publication-accolade">Oral Presentation</span></em><br>
             </li>
 
 <li>
                <strong>[<span style="color: rgb(0, 0, 0);">TRB'24</span>]</strong> Achieving Human-Like Trajectory Prediction for Autonomous Vehicles: A Behavior-Aware Approach.<br>
                <strong class="author-self">Haicheng Liao</strong>, Hanlin Kong, Huanming Shen, Zhenning Li, Ruru Tang, Ziyuan Pu, Shengbo Li, Chengzhong Xu<br>
-               <em>The 103th Transportation Research Board Annual Meeting, 2024 </em>  <em><span style="color: rgb(255, 53, 53);">Oral Presentation, Oral Rate ≈ 3.6%</span></em><br>
+               <em>The 103th Transportation Research Board Annual Meeting, 2024 </em>  <em><span class="publication-accolade">Oral Presentation, Oral Rate ≈ 3.6%</span></em><br>
             </li>
 
 <li>
@@ -558,7 +562,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <li>
                <strong>[<span style="color: rgb(0, 0, 0);">COMMTR'24</span>]</strong> GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models.<br>
                <strong class="author-self">Haicheng Liao</strong>, Huanming Shen, Zhenning Li,  Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu <br>
-               <em>Communications in Transportation Research, 2024</em>  <em><span style="color: rgb(255, 53, 53);">The Most Cited Papers in COMMTR, 2024!</span></em><br> 
+               <em>Communications in Transportation Research, 2024</em>  <em><span class="publication-accolade">The Most Cited Papers in COMMTR, 2024!</span></em><br>
       
             </li>
 

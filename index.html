@@ -272,11 +272,9 @@ a:focus-visible, .filter-btn:focus-visible { outline: 2px solid #4987fa; outline
 .paper-authors .author-name { white-space: nowrap; }
 .publication-item .paper-venue { margin: 0; font-size: 15.5px; line-height: 1.65; }
 .publication-item .paper-venue > strong { font-weight: 700; }
-.publication-item .paper-venue .github-stars,
-.publication-item .paper-venue .publication-accolade { color: #c62828; font-family: inherit; font-size: inherit; font-weight: 600; }
 .publication-item .paper-venue .github-stars { display: inline-block; margin-left: 8px; white-space: nowrap; }
 .publication-item .paper-venue .github-stars:hover { color: #a61f1f; text-decoration: underline; }
-.publication-item .paper-notes { margin: 4px 0 0; font-size: 13px; line-height: 1.65; }
+.publication-item .paper-notes { margin: 4px 0 0; font-size: 15.5px; line-height: 1.65; }
 @media (max-width: 520px) {
   .publication-item div[style*="display: flex"] { align-items: stretch !important; }
   .publication-item { padding: 26px 0; }
@@ -300,7 +298,7 @@ a:focus-visible, .filter-btn:focus-visible { outline: 2px solid #4987fa; outline
   .publication-item img { width: 100%; max-width: 100%; max-height: none; height: auto; object-fit: contain; padding: 0; border-radius: 6px !important; }
   .publication-item .paper-title { margin-bottom: 5px; font-size: 14px; line-height: 1.5; overflow-wrap: break-word; }
   .publication-item .paper-authors, .publication-item .paper-venue { font-size: 13px; line-height: 1.6; overflow-wrap: break-word; }
-  .publication-item .paper-notes { font-size: 12px; line-height: 1.6; overflow-wrap: break-word; }
+  .publication-item .paper-notes { font-size: 13px; line-height: 1.6; overflow-wrap: break-word; }
   .publication-item .paper-venue .github-stars { margin-left: 0; }
   .venue-label { padding: 2px 4px; font-size: clamp(10px, 2.6vw, 12px); line-height: 1.3; border-radius: 3px; }
 }
@@ -349,6 +347,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 .bio-icon { position: absolute; left: 0; top: 5px; width: 18px; height: 18px; color: #71859e; }
 .bio-collaboration strong { font-weight: 700; color: #25272b; }
 .paper-authors .author-self, .publication-year .author-self, .other-publications-section .author-self { color: #15181d; font-weight: 700; text-decoration-line: underline; text-decoration-color: #8494a8; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-skip-ink: auto; }
+
+/* One visual treatment for oral presentations, rankings, awards, and repository stars. */
+.publication-accolade, .github-stars, .github-stars:visited { color: #c62828; font-family: inherit; font-size: 15.5px; font-style: normal; font-weight: 600; line-height: 1.65; }
 
 /* The lower sections use the same heading rhythm as Short Bio. */
 .detail-section > h2 { margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid #d5d7db; color: #15181d; font-size: 20px; line-height: 1.35; }
@@ -424,6 +425,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 
 /* Keep the desktop's visual hierarchy and paired columns on phones. */
 @media (max-width: 640px) {
+  .publication-accolade, .github-stars, .github-stars:visited { font-size: 13px; line-height: 1.6; }
   .container, .menu_container { width: calc(100% - 16px); margin-top: 10px; margin-bottom: 10px; border-radius: 8px; }
   .container { padding: 22px clamp(14px, 3.6vw, 22px); }
   .menu_container { padding: 8px 12px; }
@@ -910,7 +912,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                     When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
                   </a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†</p>
-              <p class="paper-venue">ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span></p>
+              <p class="paper-venue">ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span class="publication-accolade">Oral (174/4385 = 3.9%)</span></p>
             </div>
               </div>
             </td>
@@ -953,7 +955,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
               <p class="paper-title"><a href='https://petrichor625.github.io/data/CAVG.pdf' target='_blank'>GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu†</p>
               <p class="paper-venue">Communications in Transportation Research <strong>(COMMTR)</strong>, 2024</p>
-              <p class="paper-notes"><span style="color: orangered;">Most Cited and Downloads Paper in COMMTR, 2024</span></p>
+              <p class="paper-notes"><span class="publication-accolade">Most Cited and Downloads Paper in COMMTR, 2024</span></p>
             </div>
               </div>
             </td>
@@ -973,7 +975,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
               <p class="paper-title"><a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu</p>
               <p class="paper-venue">International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024</p>
-              <p class="paper-notes"><span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span></p>
+              <p class="paper-notes"><span class="publication-accolade">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span></p>
             </div>
               </div>
             </td>
@@ -1261,7 +1263,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                   </a></p>
               <p class="paper-authors">Chengyue Wang*, <strong class="author-self">Haicheng Liao</strong>*, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, 
                   Chengzhong Xu, Zhenning Li†</p>
-              <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span></p>
+              <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span class="publication-accolade">Oral (600/12957 = 4.6%)</span></p>
             </div>
               </div>
             </td>
@@ -1491,7 +1493,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                     When, Where, and What? A Novel Benchmark for Accident Anticipation and Localization with Large Language Models
                   </a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Yongkang Li, Chengyue Wang, Yanchen Guan, KaHou Tam, Chunlin Tian, Li Li, Chengzhong Xu, Zhenning Li†</p>
-              <p class="paper-venue">ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span style="color: orangered;">Oral (174/4385 = 3.9%)</span></p>
+              <p class="paper-venue">ACM International Conference on Multimedia <strong>(MM)</strong>, 2024 <span class="publication-accolade">Oral (174/4385 = 3.9%)</span></p>
             </div>
               </div>
             </td>
@@ -1539,7 +1541,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
               <p class="paper-title"><a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Zhenning Li†, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu</p>
               <p class="paper-venue">International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024</p>
-              <p class="paper-notes"><span style="color: orangered;">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span></p>
+              <p class="paper-notes"><span class="publication-accolade">Ranked #1 SSRN's Top Downloads Papers (60 Days) in Robotics</span></p>
             </div>
               </div>
             </td>
@@ -1664,7 +1666,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                   </a></p>
               <p class="paper-authors">Chengyue Wang*, <strong class="author-self">Haicheng Liao</strong>*, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, 
                   Chengzhong Xu, Zhenning Li†</p>
-              <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span></p>
+              <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span class="publication-accolade">Oral (600/12957 = 4.6%)</span></p>
             </div>
               </div>
             </td>
@@ -1947,7 +1949,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
               <p class="paper-title"><a href='https://petrichor625.github.io/data/CAVG.pdf' target='_blank'>GPT-4 enhanced multimodal grounding for autonomous driving: Leveraging cross-modal attention with large language models</a></p>
               <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Huanming Shen, Zhenning Li, Chengyue Wang, Guofa Li, Yiming Bie, Chengzhong Xu†</p>
               <p class="paper-venue">Communications in Transportation Research <strong>(COMMTR)</strong>, 2024</p>
-              <p class="paper-notes"><span style="color: orangered;">Most Cited and Downloads Paper in COMMTR, 2024</span></p>
+              <p class="paper-notes"><span class="publication-accolade">Most Cited and Downloads Paper in COMMTR, 2024</span></p>
             </div>
               </div>
             </td>
@@ -2043,7 +2045,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
         <li>
             <p>
                 <strong>[<span style="color: darkblue;">TRC'30</span>]</strong> "Towards Human-like Trajectory Prediction for Autonomous Driving: A Cognitive-inspired Lightweight Model."<br>
-                - <em>The 30th Anniversary of Transportation Research Part C </em> <strong>(TRC-30) (Transportation Conf., <span style="color: orangered;">Oral Presentation</strong>)<br>
+                - <em>The 30th Anniversary of Transportation Research Part C </em> <strong>(TRC-30) (Transportation Conf., <span class="publication-accolade">Oral Presentation</span></strong>)<br>
                 -  <strong class="author-self">Haicheng Liao</strong>, Yongkang Li, Yanchen Guan, Zhenning Li,  Chengyue Wang, Zilin Bian, Ziyuan Pu, Jia Hu, Zhiyong Cui<br>
             </p>   
         </li>
@@ -2058,7 +2060,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
         <li>
             <p>
                 <strong>[<span style="color: darkblue;">CICTP'25</span>]</strong> "Improving Visual Grounding for Autonomous Driving with Large Language Models."<br>
-                - <em>COTA (Chinese Overseas Transportation Association) International Conference of Transportation Professionals</em> <strong> (Transportation Conf., <span style="color: orangered;">Best Paper Award</span>)</strong><br>
+                - <em>COTA (Chinese Overseas Transportation Association) International Conference of Transportation Professionals</em> <strong> (Transportation Conf., <span class="publication-accolade">Best Paper Award</span>)</strong><br>
                 - <strong class="author-self">Haicheng Liao</strong>, Huanming Shen, Bonan Wang, Chengyue Wang, Bin Rao, Hao Yu, Chengzhong Xu, Zhenning Li<br>
                  - <a href='https://ascelibrary.org/doi/abs/10.1061/9780784486269.027' target='_blank'>[Paper]</a><br>
             </p>   
@@ -2066,7 +2068,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
         <li>
             <p>
                 <strong>[<span style="color: darkblue;">TRB'24</span>]</strong> "Achieving Human-Like Trajectory Prediction for Autonomous Vehicles: A Behavior-Aware Approach."<br>
-                - <em>The 103th Transportation Research Board Annual Meeting</em> <strong> (Top Transportation Conf., <span style="color: orangered;">Oral Presentation, AR: 174/4385 ≈ 3.6%</span>)</strong><br>
+                - <em>The 103th Transportation Research Board Annual Meeting</em> <strong> (Top Transportation Conf., <span class="publication-accolade">Oral Presentation, AR: 174/4385 ≈ 3.6%</span>)</strong><br>
                 -  <strong class="author-self">Haicheng Liao</strong>, Hanlin Kong, Huanming Shen, Zhenning Li, Ruru Tang, Ziyuan Pu, Shengbo Li, Chengzhong Xu<br>
                 - <a href='https://annualmeeting.mytrb.org/OnlineProgramArchive/Details/20918' target='_blank'>[Paper]</a><br>
             </p>   

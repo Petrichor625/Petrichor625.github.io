@@ -108,6 +108,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 .bio-collaboration strong { font-weight: 700; color: #25272b; }
 .paper-authors .author-self, .publication-year .author-self, .other-publications-section .author-self { color: #15181d; font-weight: 700; text-decoration-line: underline; text-decoration-color: #8494a8; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-skip-ink: auto; }
 
+/* One visual treatment for oral presentations, rankings, awards, and repository stars. */
+.publication-accolade, .github-stars, .github-stars:visited { color: #c62828; font-family: inherit; font-size: 15.5px; font-style: normal; font-weight: 600; line-height: 1.65; }
+
 /* The lower sections use the same heading rhythm as Short Bio. */
 .detail-section > h2 { margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid #d5d7db; color: #15181d; font-size: 20px; line-height: 1.35; }
 .detail-section > p { margin: 11px 0; font-size: 15.5px; line-height: 1.75; }
@@ -182,6 +185,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 
 /* Keep the desktop's visual hierarchy and paired columns on phones. */
 @media (max-width: 640px) {
+  .publication-accolade, .github-stars, .github-stars:visited { font-size: 13px; line-height: 1.6; }
   .container, .menu_container { width: calc(100% - 16px); margin-top: 10px; margin-bottom: 10px; border-radius: 8px; }
   .container { padding: 22px clamp(14px, 3.6vw, 22px); }
   .menu_container { padding: 8px 12px; }
