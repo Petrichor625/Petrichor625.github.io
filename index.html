@@ -346,6 +346,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 .about-home p.bio-collaboration { font-size: 15px; }
 .bio-icon { position: absolute; left: 0; top: 5px; width: 18px; height: 18px; color: #71859e; }
 .bio-collaboration strong { font-weight: 700; color: #25272b; }
+/* Align long biography lines on wide screens; retain natural spacing on phones. */
+@media (min-width: 701px) {
+  .about-home p.bio-paragraph { text-align: justify; text-justify: inter-word; text-align-last: left; }
+}
 .paper-authors .author-self, .publication-year .author-self, .other-publications-section .author-self { color: #15181d; font-weight: 700; text-decoration-line: underline; text-decoration-color: #8494a8; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-skip-ink: auto; }
 
 /* One visual treatment for oral presentations, rankings, awards, and repository stars. */
@@ -507,7 +511,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
 <section aria-labelledby="about-heading" class="about-home">
 <h6 id="about-heading">Short Bio</h6>
 <p class="bio-paragraph"><svg aria-hidden="true" class="bio-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Z"></path><path d="M6 11v6c3 3 9 3 12 0v-6M22 9v7"></path></svg>I received my Ph.D. in Computer Science from 
-       <a href="https://www.um.edu.mo">University of Macau</a> (UM), supervised by 
+       <a href="https://www.um.edu.mo">University of Macau</a> (UM) in 2026, supervised by
        <a href="https://www.fst.um.edu.mo/personal/zhenningli/">Prof. Zhenning Li</a> and <a href="https://www.fst.um.edu.mo/people/czxu/">Prof. Chengzhong Xu</a> (IEEE Fellow, recipient of the Guanghua Engineering Science and Technology Prize). 
        I am affiliated with the <a href="https://skliotsc.um.edu.mo/">State Key Laboratory of Internet of Things for Smart City (SKL-IOTSC)</a>.
        I earned my B.E. from the University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/">UESTC</a>) in 2022.</p>
