@@ -268,6 +268,8 @@ a:focus-visible, .filter-btn:focus-visible { outline: 2px solid #4987fa; outline
 .venue-label-year { color: #fff; font-weight: 500; }
 .publication-item .paper-title { margin: 0 0 5px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .publication-item .paper-authors { margin: 0 0 4px; font-size: 15.5px; line-height: 1.65; }
+.paper-authors .author-continuation { display: block; }
+.paper-authors .author-name { white-space: nowrap; }
 .publication-item .paper-venue { margin: 0; font-size: 15.5px; line-height: 1.65; }
 .publication-item .paper-venue > strong { font-weight: 700; }
 .publication-item .paper-venue .github-stars,
@@ -286,6 +288,7 @@ a:focus-visible, .filter-btn:focus-visible { outline: 2px solid #4987fa; outline
 
 /* Let labels wrap at intermediate widths instead of spilling off the figure. */
 @media (max-width: 900px) {
+  .paper-authors .author-continuation { display: inline; }
   .venue-label { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
   .venue-label-year { display: inline-block; }
 }
@@ -655,7 +658,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             </div>
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/AIJ_2026.pdf" target="_blank" rel="noopener">Adaptive Large Language Model Reasoning for Autonomous Driving Decision-Making</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, <span class="author-continuation"><span class="author-name">Zhiyong Cui</span>, Guohui Zhang, Chengzhong Xu†</span></p>
               <p class="paper-venue">Artificial Intelligence <strong>(AIJ)</strong>, 2026</p>
             </div>
           </div>
@@ -727,7 +730,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 </div>
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, <span class="author-continuation"><span class="author-name">Guofa Li</span>, Shengbo Eben Li, Chengzhong Xu†</span></p>
               <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024 <a class="github-stars" href="https://github.com/Petrichor625/BATraj-Behavior-aware-Model" target="_blank" rel="noopener">GitHub · 1.1K+ stars</a></p>
             </div>
               </div>
@@ -767,7 +770,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             </div>
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/AIJ_2026.pdf" target="_blank" rel="noopener">Adaptive Large Language Model Reasoning for Autonomous Driving Decision-Making</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, <span class="author-continuation"><span class="author-name">Zhiyong Cui</span>, Guohui Zhang, Chengzhong Xu†</span></p>
               <p class="paper-venue">Artificial Intelligence <strong>(AIJ)</strong>, 2026</p>
             </div>
           </div>
@@ -922,7 +925,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 </div>
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, <span class="author-continuation"><span class="author-name">Guofa Li</span>, Shengbo Eben Li, Chengzhong Xu†</span></p>
               <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024 <a class="github-stars" href="https://github.com/Petrichor625/BATraj-Behavior-aware-Model" target="_blank" rel="noopener">GitHub · 1.1K+ stars</a></p>
             </div>
               </div>
@@ -1387,7 +1390,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
             </div>
             <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href="data/AIJ_2026.pdf" target="_blank" rel="noopener">Adaptive Large Language Model Reasoning for Autonomous Driving Decision-Making</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, Zhiyong Cui, Guohui Zhang, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Chengyue Wang, Hanlin Kong, Zhenning Li†, Zhengbing He, <span class="author-continuation"><span class="author-name">Zhiyong Cui</span>, Guohui Zhang, Chengzhong Xu†</span></p>
               <p class="paper-venue">Artificial Intelligence <strong>(AIJ)</strong>, 2026</p>
             </div>
           </div>
@@ -1501,7 +1504,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
                 </div>
                 <div style="flex: 1; min-width: 300px;">
               <p class="paper-title"><a href='https://ojs.aaai.org/index.php/AAAI/article/view/28900' target='_blank'>BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous Driving</a></p>
-              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, Guofa Li, Shengbo Eben Li, Chengzhong Xu†</p>
+              <p class="paper-authors"><strong class="author-self">Haicheng Liao</strong>, Zhenning Li, Huanming Shen, Wenxuan Zeng, Dongping Liao, <span class="author-continuation"><span class="author-name">Guofa Li</span>, Shengbo Eben Li, Chengzhong Xu†</span></p>
               <p class="paper-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2024 <a class="github-stars" href="https://github.com/Petrichor625/BATraj-Behavior-aware-Model" target="_blank" rel="noopener">GitHub · 1.1K+ stars</a></p>
             </div>
               </div>
