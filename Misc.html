@@ -180,35 +180,40 @@ a:focus-visible, button:focus-visible { outline: 2px solid #4987fa; outline-offs
   .publication-year li > em { font-size: 14.5px; }
 }
 
-/* Phone portrait and narrow split-screen layouts share a single reading column. */
+/* Keep the desktop's visual hierarchy and paired columns on phones. */
 @media (max-width: 640px) {
-  .container, .menu_container { width: calc(100% - 24px); margin-top: 12px; margin-bottom: 12px; }
-  .container { padding: 24px clamp(16px, 4vw, 24px); }
+  .container, .menu_container { width: calc(100% - 16px); margin-top: 10px; margin-bottom: 10px; border-radius: 8px; }
+  .container { padding: 22px clamp(14px, 3.6vw, 22px); }
   .menu_container { padding: 8px 12px; }
   .site-nav { flex-wrap: wrap; column-gap: clamp(16px, 5vw, 25px); row-gap: 4px; }
   .site-nav a { display: flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 44px; max-width: 100%; font-size: 17px; overflow-wrap: anywhere; }
-  .profile-top { display: block; margin-bottom: 26px; padding: 0; }
-  .profile-top #me { width: 142px; height: 142px; margin: 0 0 18px; }
-  .profile-details h1 { font-size: 28px; overflow-wrap: anywhere; }
-  .profile-details .chinese-name { display: inline-block; margin-left: 3px; }
-  .profile-contact { margin-top: 14px; }
-  .profile-contact .profile-email { overflow-wrap: anywhere; }
-  .profile-contact .profile-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; max-width: 320px; margin-top: 5px; font-size: 14px; }
-  .profile-links a { display: flex; align-items: center; box-sizing: border-box; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; }
+  .profile-top { display: grid; grid-template-columns: clamp(94px, 27vw, 160px) minmax(0, 1fr); gap: 3px clamp(14px, 4vw, 22px); margin-bottom: 24px; padding: 0; align-items: start; }
+  .profile-top #sidebar { grid-column: 1; grid-row: 1 / 4; align-self: center; }
+  .profile-top #me { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; margin: 0; }
+  .profile-details { display: contents; }
+  .profile-details h1, .profile-details .profile-degree, .profile-details .profile-affiliation { grid-column: 2; }
+  .profile-details h1 { font-size: clamp(20px, 5.5vw, 28px); line-height: 1.25; letter-spacing: -.3px; overflow-wrap: normal; }
+  .profile-details .chinese-name { display: inline-block; margin-left: 0; font-size: clamp(13px, 3.4vw, 16px); }
+  .profile-details .profile-degree { margin-top: 0; font-size: 13px; line-height: 1.45; }
+  .profile-details .profile-affiliation { margin-top: 5px; line-height: 1.5; }
+  .profile-affiliation .profile-university { font-size: 13.5px; }
+  .profile-affiliation .profile-laboratory { font-size: 12px; line-height: 1.5; }
+  .profile-contact { grid-column: 1 / -1; margin-top: 10px; }
+  .profile-contact .profile-email { font-size: 13px; overflow-wrap: break-word; }
+  .profile-contact .profile-links { display: flex; flex-wrap: wrap; gap: 0 12px; max-width: none; margin-top: 1px; font-size: 13px; }
+  .profile-links a { display: flex; align-items: center; box-sizing: border-box; min-height: 40px; max-width: 100%; overflow-wrap: normal; }
   .profile-links a + a { border-left: 0; padding-left: 0; }
-  .about-home p.bio-paragraph { overflow-wrap: anywhere; }
+  .about-home p.bio-paragraph { padding-left: 23px; font-size: 14.5px; line-height: 1.75; overflow-wrap: break-word; }
+  .about-home p.bio-mentoring, .about-home p.bio-collaboration { font-size: 14px; }
   .news-header { flex-wrap: wrap; gap: 4px 12px; padding: 10px 14px; }
   .news-header > a { display: flex; align-items: center; min-height: 36px; max-width: 100%; white-space: normal; }
-  .news-scroll ul { padding: 4px 14px 8px; }
-  .news-scroll li { display: block; padding: 10px 0 12px; }
-  .news-scroll time { display: block; margin-bottom: 3px; font-size: 12px; line-height: 1.5; }
-  .news-scroll p { font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+  .news-scroll ul { padding: 4px 12px 8px; }
+  .news-scroll li { display: flex; align-items: baseline; gap: 10px; padding: 9px 0; }
+  .news-scroll time { flex: 0 0 49px; margin-bottom: 0; font-size: 11px; line-height: 1.5; }
+  .news-scroll p { font-size: 13px; line-height: 1.7; overflow-wrap: break-word; }
   .news-scroll li.news-year-start { margin-top: 5px; padding-top: 13px; }
-  .filter-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(44px, 1fr) repeat(3, minmax(0, 1fr)); gap: 7px; }
-  .filter-btn { box-sizing: border-box; min-width: 0; min-height: 44px; margin: 0; padding: 8px 9px; font-size: 14px; line-height: 1.45; white-space: normal; overflow-wrap: anywhere; }
-  .filter-btn:nth-child(1) { grid-column: span 2; }
-  .filter-btn:nth-child(2) { grid-column: span 1; }
-  .filter-btn:nth-child(3), .filter-btn:nth-child(n + 4) { grid-column: span 3; }
+  .filter-buttons { display: flex; flex-wrap: nowrap; gap: 4px; }
+  .filter-btn { flex: 1 1 auto; box-sizing: border-box; min-width: 0; min-height: 40px; margin: 0; padding: 7px 5px; font-size: clamp(10.5px, 2.85vw, 13px); line-height: 1.5; white-space: nowrap; overflow-wrap: normal; }
   .detail-section > h2, .archive-heading h2, #selected-heading { overflow-wrap: anywhere; }
   .detail-section > p, .mentoring-section .mentoring-student { overflow-wrap: anywhere; }
   .mentoring-year-group > summary { box-sizing: border-box; min-height: 44px; }
